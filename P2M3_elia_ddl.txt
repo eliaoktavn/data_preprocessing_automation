@@ -1,0 +1,46 @@
+URL Data Set:
+https://www.kaggle.com/datasets/thedevastator/analyzing-customer-spending-habits-to-improve-sa
+
+QUERY:
+
+-- DDL SYNTAX
+CREATE TABLE table_m3 (
+    "Index" SERIAL,
+    "Date" DATE,
+    "Year" DECIMAL,
+    "Month" VARCHAR,
+    "Customer Age" DECIMAL,
+    "Customer Gender" VARCHAR,
+    "Country" VARCHAR,
+    "State" VARCHAR,
+    "Product Category" VARCHAR,
+    "Sub Category" VARCHAR,
+    "Quantity" DECIMAL,
+    "Unit Cost" DECIMAL,
+    "Unit Price" DECIMAL,
+    "Cost" DECIMAL,
+    "Revenue" DECIMAL,
+    "Column1" VARCHAR
+);
+
+COPY table_m3("Index", "Date",
+    "Year",
+    "Month",
+    "Customer Age",
+    "Customer Gender",
+    "Country",
+    "State",
+    "Product Category",
+    "Sub Category",
+    "Quantity",
+    "Unit Cost",
+    "Unit Price",
+    "Cost",
+    "Revenue",
+    "Column1")
+FROM '/Library/tmp/P2M3_elia_data_raw.csv'
+DELIMITER ','
+CSV HEADER;
+
+-- DML SYNTAX
+SELECT * FROM table_m3

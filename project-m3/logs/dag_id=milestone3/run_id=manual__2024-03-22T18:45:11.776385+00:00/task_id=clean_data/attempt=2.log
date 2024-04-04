@@ -1,0 +1,48 @@
+[2024-03-22T18:46:21.557+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.clean_data manual__2024-03-22T18:45:11.776385+00:00 [queued]>
+[2024-03-22T18:46:21.564+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.clean_data manual__2024-03-22T18:45:11.776385+00:00 [queued]>
+[2024-03-22T18:46:21.565+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:46:21.565+0000] {taskinstance.py:1369} INFO - Starting attempt 2 of 2
+[2024-03-22T18:46:21.565+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:46:21.577+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): clean_data> on 2024-03-22 18:45:11.776385+00:00
+[2024-03-22T18:46:21.586+0000] {standard_task_runner.py:52} INFO - Started process 1750 to run task
+[2024-03-22T18:46:21.592+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'clean_data', 'manual__2024-03-22T18:45:11.776385+00:00', '--job-id', '182', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmpnh692trr', '--error-file', '/tmp/tmps6c2k5yu']
+[2024-03-22T18:46:21.594+0000] {standard_task_runner.py:80} INFO - Job 182: Subtask clean_data
+[2024-03-22T18:46:21.679+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.clean_data manual__2024-03-22T18:45:11.776385+00:00 [running]> on host b79cb602ca97
+[2024-03-22T18:46:21.861+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=clean_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T18:45:11.776385+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-03-22T18:45:11.776385+00:00
+[2024-03-22T18:46:21.867+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_elia_DAG.py", line 41, in clean
+    df=pd.read_csv('/opt/airflow/dags/customer.csv')
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/customer.csv'
+[2024-03-22T18:46:21.878+0000] {taskinstance.py:1412} INFO - Marking task as FAILED. dag_id=milestone3, task_id=clean_data, execution_date=20240322T184511, start_date=20240322T184621, end_date=20240322T184621
+[2024-03-22T18:46:21.885+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 182 for task clean_data ([Errno 2] No such file or directory: '/opt/airflow/dags/customer.csv'; 1750)
+[2024-03-22T18:46:21.904+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-22T18:46:21.937+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

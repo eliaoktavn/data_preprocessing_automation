@@ -1,0 +1,615 @@
+[2024-03-22T19:07:25.983+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:05:00+00:00 [queued]>
+[2024-03-22T19:07:25.999+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:05:00+00:00 [queued]>
+[2024-03-22T19:07:25.999+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T19:07:26.000+0000] {taskinstance.py:1369} INFO - Starting attempt 2 of 2
+[2024-03-22T19:07:26.000+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T19:07:26.018+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): transfer_data_to_kibana> on 2024-03-22 19:05:00+00:00
+[2024-03-22T19:07:26.051+0000] {standard_task_runner.py:52} INFO - Started process 2335 to run task
+[2024-03-22T19:07:26.058+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'transfer_data_to_kibana', 'scheduled__2024-03-22T19:05:00+00:00', '--job-id', '286', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmpi2afbgcr', '--error-file', '/tmp/tmpr83v4w9s']
+[2024-03-22T19:07:26.060+0000] {standard_task_runner.py:80} INFO - Job 286: Subtask transfer_data_to_kibana
+[2024-03-22T19:07:26.221+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:05:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T19:07:26.324+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=transfer_data_to_kibana
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T19:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T19:05:00+00:00
+[2024-03-22T19:07:26.601+0000] {logging_mixin.py:115} WARNING - /home/***/.local/lib/python3.7/site-packages/elasticsearch/connection/base.py:208 ElasticsearchWarning: [types removal] Specifying types in document index requests is deprecated, use the typeless endpoints instead (/{index}/_doc/{id}, /{index}/_doc, or /{index}/_create/{id}).
+[2024-03-22T19:07:26.602+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.074s]
+[2024-03-22T19:07:26.603+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'LH2PZ44BHqZaefJ8k5rw', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4916, '_primary_term': 4}
+[2024-03-22T19:07:26.645+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.042s]
+[2024-03-22T19:07:26.646+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'L32PZ44BHqZaefJ8lJoN', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4919, '_primary_term': 4}
+[2024-03-22T19:07:26.658+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:07:26.658+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'M32PZ44BHqZaefJ8lJo8', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4923, '_primary_term': 4}
+[2024-03-22T19:07:26.669+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:26.670+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'NX2PZ44BHqZaefJ8lJpF', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4925, '_primary_term': 4}
+[2024-03-22T19:07:26.678+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:26.679+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'OH2PZ44BHqZaefJ8lJpP', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4927, '_primary_term': 4}
+[2024-03-22T19:07:26.688+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:26.688+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'OX2PZ44BHqZaefJ8lJpY', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4929, '_primary_term': 4}
+[2024-03-22T19:07:26.694+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:26.695+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'PH2PZ44BHqZaefJ8lJph', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4932, '_primary_term': 4}
+[2024-03-22T19:07:26.703+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:26.703+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'PX2PZ44BHqZaefJ8lJpo', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4933, '_primary_term': 4}
+[2024-03-22T19:07:26.710+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:26.711+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'P32PZ44BHqZaefJ8lJpx', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4936, '_primary_term': 4}
+[2024-03-22T19:07:26.719+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:26.720+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'QX2PZ44BHqZaefJ8lJp4', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4937, '_primary_term': 4}
+[2024-03-22T19:07:26.730+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:26.730+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'RH2PZ44BHqZaefJ8lJqC', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4939, '_primary_term': 4}
+[2024-03-22T19:07:26.740+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:07:26.740+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Rn2PZ44BHqZaefJ8lJqM', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4941, '_primary_term': 4}
+[2024-03-22T19:07:26.749+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:26.749+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'SH2PZ44BHqZaefJ8lJqW', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4943, '_primary_term': 4}
+[2024-03-22T19:07:26.758+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:07:26.759+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Sn2PZ44BHqZaefJ8lJqf', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4945, '_primary_term': 4}
+[2024-03-22T19:07:26.766+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:26.767+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'TH2PZ44BHqZaefJ8lJqo', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4947, '_primary_term': 4}
+[2024-03-22T19:07:26.799+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.028s]
+[2024-03-22T19:07:26.800+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Tn2PZ44BHqZaefJ8lJq-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4949, '_primary_term': 4}
+[2024-03-22T19:07:26.813+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:07:26.814+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'UH2PZ44BHqZaefJ8lJrU', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4952, '_primary_term': 4}
+[2024-03-22T19:07:26.823+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:26.823+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Un2PZ44BHqZaefJ8lJrh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4954, '_primary_term': 4}
+[2024-03-22T19:07:26.840+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:07:26.840+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'U32PZ44BHqZaefJ8lJrq', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4956, '_primary_term': 4}
+[2024-03-22T19:07:26.847+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:26.847+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'VX2PZ44BHqZaefJ8lJr5', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4958, '_primary_term': 4}
+[2024-03-22T19:07:26.858+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:26.858+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'WH2PZ44BHqZaefJ8lZoC', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4959, '_primary_term': 4}
+[2024-03-22T19:07:26.867+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:26.867+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Wn2PZ44BHqZaefJ8lZoN', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4962, '_primary_term': 4}
+[2024-03-22T19:07:26.878+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:26.879+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'W32PZ44BHqZaefJ8lZoX', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4963, '_primary_term': 4}
+[2024-03-22T19:07:26.887+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:26.888+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Xn2PZ44BHqZaefJ8lZoh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4966, '_primary_term': 4}
+[2024-03-22T19:07:26.897+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:26.898+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'YH2PZ44BHqZaefJ8lZoq', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4967, '_primary_term': 4}
+[2024-03-22T19:07:26.908+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:26.912+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Yn2PZ44BHqZaefJ8lZoz', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4970, '_primary_term': 4}
+[2024-03-22T19:07:26.929+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:07:26.932+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Y32PZ44BHqZaefJ8lZpF', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4971, '_primary_term': 4}
+[2024-03-22T19:07:26.945+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:07:26.947+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'ZX2PZ44BHqZaefJ8lZpa', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4973, '_primary_term': 4}
+[2024-03-22T19:07:26.955+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:26.955+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Z32PZ44BHqZaefJ8lZpl', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4976, '_primary_term': 4}
+[2024-03-22T19:07:26.962+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:26.963+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'an2PZ44BHqZaefJ8lZps', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4978, '_primary_term': 4}
+[2024-03-22T19:07:26.979+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:07:26.979+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'bH2PZ44BHqZaefJ8lZp6', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4980, '_primary_term': 4}
+[2024-03-22T19:07:26.989+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:26.990+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'bX2PZ44BHqZaefJ8lZqG', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4981, '_primary_term': 4}
+[2024-03-22T19:07:26.999+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:07:27.000+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'cH2PZ44BHqZaefJ8lZqQ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4984, '_primary_term': 4}
+[2024-03-22T19:07:27.009+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.009+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'cX2PZ44BHqZaefJ8lZqZ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4985, '_primary_term': 4}
+[2024-03-22T19:07:27.016+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.016+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'c32PZ44BHqZaefJ8lZqj', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4988, '_primary_term': 4}
+[2024-03-22T19:07:27.024+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.024+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'dX2PZ44BHqZaefJ8lZqq', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4989, '_primary_term': 4}
+[2024-03-22T19:07:27.031+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.032+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'd32PZ44BHqZaefJ8lZqx', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4991, '_primary_term': 4}
+[2024-03-22T19:07:27.044+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:07:27.045+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'en2PZ44BHqZaefJ8lZq6', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4993, '_primary_term': 4}
+[2024-03-22T19:07:27.059+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:07:27.059+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'fH2PZ44BHqZaefJ8lZrK', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4996, '_primary_term': 4}
+[2024-03-22T19:07:27.072+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-22T19:07:27.073+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'fX2PZ44BHqZaefJ8lZrW', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4997, '_primary_term': 4}
+[2024-03-22T19:07:27.082+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.083+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'gH2PZ44BHqZaefJ8lZrj', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4999, '_primary_term': 4}
+[2024-03-22T19:07:27.090+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.091+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'gn2PZ44BHqZaefJ8lZrs', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5002, '_primary_term': 4}
+[2024-03-22T19:07:27.099+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.099+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'hH2PZ44BHqZaefJ8lZr0', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5004, '_primary_term': 4}
+[2024-03-22T19:07:27.107+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.107+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'hX2PZ44BHqZaefJ8lZr9', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5005, '_primary_term': 4}
+[2024-03-22T19:07:27.111+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.111+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'iH2PZ44BHqZaefJ8lpoF', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5007, '_primary_term': 4}
+[2024-03-22T19:07:27.116+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.116+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'iX2PZ44BHqZaefJ8lpoJ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5010, '_primary_term': 4}
+[2024-03-22T19:07:27.120+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.120+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'i32PZ44BHqZaefJ8lpoN', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5011, '_primary_term': 4}
+[2024-03-22T19:07:27.124+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.124+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'jn2PZ44BHqZaefJ8lpoR', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5013, '_primary_term': 4}
+[2024-03-22T19:07:27.137+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:07:27.138+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'j32PZ44BHqZaefJ8lpoe', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5015, '_primary_term': 4}
+[2024-03-22T19:07:27.142+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.143+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'kX2PZ44BHqZaefJ8lpok', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5017, '_primary_term': 4}
+[2024-03-22T19:07:27.146+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.002s]
+[2024-03-22T19:07:27.146+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'lH2PZ44BHqZaefJ8lpoo', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5020, '_primary_term': 4}
+[2024-03-22T19:07:27.149+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.149+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'lX2PZ44BHqZaefJ8lpor', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5022, '_primary_term': 4}
+[2024-03-22T19:07:27.155+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.157+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'mH2PZ44BHqZaefJ8lpov', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5023, '_primary_term': 4}
+[2024-03-22T19:07:27.163+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.163+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'mn2PZ44BHqZaefJ8lpo4', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5025, '_primary_term': 4}
+[2024-03-22T19:07:27.166+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.166+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'm32PZ44BHqZaefJ8lpo8', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5027, '_primary_term': 4}
+[2024-03-22T19:07:27.173+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.175+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'nX2PZ44BHqZaefJ8lpo_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5029, '_primary_term': 4}
+[2024-03-22T19:07:27.179+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.180+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'oH2PZ44BHqZaefJ8lppI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5032, '_primary_term': 4}
+[2024-03-22T19:07:27.188+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.188+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'on2PZ44BHqZaefJ8lppN', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5034, '_primary_term': 4}
+[2024-03-22T19:07:27.193+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.195+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'pH2PZ44BHqZaefJ8lppV', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5036, '_primary_term': 4}
+[2024-03-22T19:07:27.199+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.199+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'pX2PZ44BHqZaefJ8lppc', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5038, '_primary_term': 4}
+[2024-03-22T19:07:27.206+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.207+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'p32PZ44BHqZaefJ8lpph', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5040, '_primary_term': 4}
+[2024-03-22T19:07:27.213+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.214+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'qX2PZ44BHqZaefJ8lppp', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5042, '_primary_term': 4}
+[2024-03-22T19:07:27.223+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.223+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'rH2PZ44BHqZaefJ8lppv', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5044, '_primary_term': 4}
+[2024-03-22T19:07:27.227+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.228+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'rn2PZ44BHqZaefJ8lpp4', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5046, '_primary_term': 4}
+[2024-03-22T19:07:27.233+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.233+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'sH2PZ44BHqZaefJ8lpp9', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5048, '_primary_term': 4}
+[2024-03-22T19:07:27.237+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.238+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'sn2PZ44BHqZaefJ8lpqC', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5050, '_primary_term': 4}
+[2024-03-22T19:07:27.241+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.242+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 's32PZ44BHqZaefJ8lpqH', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5052, '_primary_term': 4}
+[2024-03-22T19:07:27.245+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.245+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'tX2PZ44BHqZaefJ8lpqK', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5054, '_primary_term': 4}
+[2024-03-22T19:07:27.249+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.249+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'uH2PZ44BHqZaefJ8lpqO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5056, '_primary_term': 4}
+[2024-03-22T19:07:27.253+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.255+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'un2PZ44BHqZaefJ8lpqS', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5058, '_primary_term': 4}
+[2024-03-22T19:07:27.262+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.262+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'vH2PZ44BHqZaefJ8lpqY', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5060, '_primary_term': 4}
+[2024-03-22T19:07:27.268+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.268+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'vn2PZ44BHqZaefJ8lpqf', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5062, '_primary_term': 4}
+[2024-03-22T19:07:27.274+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.276+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'v32PZ44BHqZaefJ8lpqm', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5063, '_primary_term': 4}
+[2024-03-22T19:07:27.281+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.281+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'wn2PZ44BHqZaefJ8lpqt', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5066, '_primary_term': 4}
+[2024-03-22T19:07:27.284+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.284+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'xH2PZ44BHqZaefJ8lpqy', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5068, '_primary_term': 4}
+[2024-03-22T19:07:27.289+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.289+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'xX2PZ44BHqZaefJ8lpq1', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5069, '_primary_term': 4}
+[2024-03-22T19:07:27.293+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.293+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'x32PZ44BHqZaefJ8lpq6', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5071, '_primary_term': 4}
+[2024-03-22T19:07:27.297+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.297+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'yX2PZ44BHqZaefJ8lpq-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5073, '_primary_term': 4}
+[2024-03-22T19:07:27.303+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.305+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'y32PZ44BHqZaefJ8lprD', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5075, '_primary_term': 4}
+[2024-03-22T19:07:27.309+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.309+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'zX2PZ44BHqZaefJ8lprK', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5077, '_primary_term': 4}
+[2024-03-22T19:07:27.312+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.313+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'z32PZ44BHqZaefJ8lprO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5079, '_primary_term': 4}
+[2024-03-22T19:07:27.316+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.317+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '0X2PZ44BHqZaefJ8lprR', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5081, '_primary_term': 4}
+[2024-03-22T19:07:27.320+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.002s]
+[2024-03-22T19:07:27.320+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '032PZ44BHqZaefJ8lprW', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5083, '_primary_term': 4}
+[2024-03-22T19:07:27.324+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.325+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '1X2PZ44BHqZaefJ8lpra', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5085, '_primary_term': 4}
+[2024-03-22T19:07:27.329+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.329+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '132PZ44BHqZaefJ8lpre', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5087, '_primary_term': 4}
+[2024-03-22T19:07:27.335+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.335+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '2n2PZ44BHqZaefJ8lprk', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5090, '_primary_term': 4}
+[2024-03-22T19:07:27.340+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.340+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '3H2PZ44BHqZaefJ8lprp', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5092, '_primary_term': 4}
+[2024-03-22T19:07:27.344+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.345+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '3X2PZ44BHqZaefJ8lprt', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5093, '_primary_term': 4}
+[2024-03-22T19:07:27.354+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.354+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '332PZ44BHqZaefJ8lpry', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5095, '_primary_term': 4}
+[2024-03-22T19:07:27.359+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.360+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '4n2PZ44BHqZaefJ8lpr7', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5098, '_primary_term': 4}
+[2024-03-22T19:07:27.366+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.373+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '5H2PZ44BHqZaefJ8l5oB', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5100, '_primary_term': 4}
+[2024-03-22T19:07:27.379+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.380+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '5X2PZ44BHqZaefJ8l5oO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5102, '_primary_term': 4}
+[2024-03-22T19:07:27.388+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.388+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '532PZ44BHqZaefJ8l5oV', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5103, '_primary_term': 4}
+[2024-03-22T19:07:27.395+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.395+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '6n2PZ44BHqZaefJ8l5oe', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5106, '_primary_term': 4}
+[2024-03-22T19:07:27.400+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.400+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '632PZ44BHqZaefJ8l5ol', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5108, '_primary_term': 4}
+[2024-03-22T19:07:27.405+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.405+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '7n2PZ44BHqZaefJ8l5op', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5110, '_primary_term': 4}
+[2024-03-22T19:07:27.409+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.409+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '8H2PZ44BHqZaefJ8l5ou', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5112, '_primary_term': 4}
+[2024-03-22T19:07:27.412+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.416+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '8X2PZ44BHqZaefJ8l5oy', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5114, '_primary_term': 4}
+[2024-03-22T19:07:27.421+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.421+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '832PZ44BHqZaefJ8l5o5', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5116, '_primary_term': 4}
+[2024-03-22T19:07:27.423+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.002s]
+[2024-03-22T19:07:27.424+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '9n2PZ44BHqZaefJ8l5o-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5117, '_primary_term': 4}
+[2024-03-22T19:07:27.427+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.428+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '932PZ44BHqZaefJ8l5pA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5120, '_primary_term': 4}
+[2024-03-22T19:07:27.434+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.437+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '-X2PZ44BHqZaefJ8l5pF', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5122, '_primary_term': 4}
+[2024-03-22T19:07:27.442+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.443+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '_H2PZ44BHqZaefJ8l5pO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5124, '_primary_term': 4}
+[2024-03-22T19:07:27.446+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.446+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '_X2PZ44BHqZaefJ8l5pU', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5125, '_primary_term': 4}
+[2024-03-22T19:07:27.452+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.456+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'AH2PZ44BHqZaefJ8l5tX', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5128, '_primary_term': 4}
+[2024-03-22T19:07:27.460+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.461+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'An2PZ44BHqZaefJ8l5th', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5129, '_primary_term': 4}
+[2024-03-22T19:07:27.465+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.465+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'A32PZ44BHqZaefJ8l5tm', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5131, '_primary_term': 4}
+[2024-03-22T19:07:27.469+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.470+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Bn2PZ44BHqZaefJ8l5tq', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5134, '_primary_term': 4}
+[2024-03-22T19:07:27.473+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.474+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'B32PZ44BHqZaefJ8l5tv', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5135, '_primary_term': 4}
+[2024-03-22T19:07:27.477+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.478+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'CX2PZ44BHqZaefJ8l5tz', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5137, '_primary_term': 4}
+[2024-03-22T19:07:27.481+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.482+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'DH2PZ44BHqZaefJ8l5t3', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5140, '_primary_term': 4}
+[2024-03-22T19:07:27.486+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.486+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'DX2PZ44BHqZaefJ8l5t8', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5142, '_primary_term': 4}
+[2024-03-22T19:07:27.490+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.491+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'D32PZ44BHqZaefJ8l5uA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5144, '_primary_term': 4}
+[2024-03-22T19:07:27.494+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.494+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'EX2PZ44BHqZaefJ8l5uE', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5145, '_primary_term': 4}
+[2024-03-22T19:07:27.498+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.498+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'FH2PZ44BHqZaefJ8l5uH', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5148, '_primary_term': 4}
+[2024-03-22T19:07:27.504+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.504+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'FX2PZ44BHqZaefJ8l5uL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5149, '_primary_term': 4}
+[2024-03-22T19:07:27.509+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.509+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'GH2PZ44BHqZaefJ8l5uS', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5151, '_primary_term': 4}
+[2024-03-22T19:07:27.513+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.513+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Gn2PZ44BHqZaefJ8l5uW', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5154, '_primary_term': 4}
+[2024-03-22T19:07:27.515+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.002s]
+[2024-03-22T19:07:27.516+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'G32PZ44BHqZaefJ8l5ua', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5155, '_primary_term': 4}
+[2024-03-22T19:07:27.518+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.002s]
+[2024-03-22T19:07:27.519+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Hn2PZ44BHqZaefJ8l5ud', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5157, '_primary_term': 4}
+[2024-03-22T19:07:27.522+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.523+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'IH2PZ44BHqZaefJ8l5ug', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5160, '_primary_term': 4}
+[2024-03-22T19:07:27.526+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.527+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'In2PZ44BHqZaefJ8l5uk', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5162, '_primary_term': 4}
+[2024-03-22T19:07:27.536+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:07:27.537+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'JH2PZ44BHqZaefJ8l5uo', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5163, '_primary_term': 4}
+[2024-03-22T19:07:27.542+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.542+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'JX2PZ44BHqZaefJ8l5uy', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5166, '_primary_term': 4}
+[2024-03-22T19:07:27.545+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.545+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'KH2PZ44BHqZaefJ8l5u3', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5167, '_primary_term': 4}
+[2024-03-22T19:07:27.548+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.549+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'KX2PZ44BHqZaefJ8l5u6', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5169, '_primary_term': 4}
+[2024-03-22T19:07:27.552+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.552+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'LH2PZ44BHqZaefJ8l5u-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5171, '_primary_term': 4}
+[2024-03-22T19:07:27.555+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.556+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'LX2PZ44BHqZaefJ8l5vB', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5173, '_primary_term': 4}
+[2024-03-22T19:07:27.559+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.559+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'L32PZ44BHqZaefJ8l5vF', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5176, '_primary_term': 4}
+[2024-03-22T19:07:27.562+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.562+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'MX2PZ44BHqZaefJ8l5vI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5177, '_primary_term': 4}
+[2024-03-22T19:07:27.565+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.566+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'NH2PZ44BHqZaefJ8l5vL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5179, '_primary_term': 4}
+[2024-03-22T19:07:27.570+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.570+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Nn2PZ44BHqZaefJ8l5vO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5182, '_primary_term': 4}
+[2024-03-22T19:07:27.574+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.574+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'N32PZ44BHqZaefJ8l5vT', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5183, '_primary_term': 4}
+[2024-03-22T19:07:27.577+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.577+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'OX2PZ44BHqZaefJ8l5vX', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5185, '_primary_term': 4}
+[2024-03-22T19:07:27.580+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.002s]
+[2024-03-22T19:07:27.580+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'O32PZ44BHqZaefJ8l5va', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5187, '_primary_term': 4}
+[2024-03-22T19:07:27.582+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.002s]
+[2024-03-22T19:07:27.583+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Pn2PZ44BHqZaefJ8l5vd', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5189, '_primary_term': 4}
+[2024-03-22T19:07:27.586+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.002s]
+[2024-03-22T19:07:27.586+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'P32PZ44BHqZaefJ8l5vg', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5191, '_primary_term': 4}
+[2024-03-22T19:07:27.589+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.590+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'QX2PZ44BHqZaefJ8l5vj', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5193, '_primary_term': 4}
+[2024-03-22T19:07:27.593+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:27.593+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Q32PZ44BHqZaefJ8l5vn', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5195, '_primary_term': 4}
+[2024-03-22T19:07:27.598+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.598+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Rn2PZ44BHqZaefJ8l5vr', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5198, '_primary_term': 4}
+[2024-03-22T19:07:27.602+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.603+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'R32PZ44BHqZaefJ8l5vv', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5200, '_primary_term': 4}
+[2024-03-22T19:07:27.607+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:27.607+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Sn2PZ44BHqZaefJ8l5v0', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5202, '_primary_term': 4}
+[2024-03-22T19:07:27.614+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.615+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'TH2PZ44BHqZaefJ8l5v5', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5203, '_primary_term': 4}
+[2024-03-22T19:07:27.622+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.622+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'TX2PZ44BHqZaefJ8mJsA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5206, '_primary_term': 4}
+[2024-03-22T19:07:27.642+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:07:27.643+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'UH2PZ44BHqZaefJ8mJsL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5208, '_primary_term': 4}
+[2024-03-22T19:07:27.656+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-22T19:07:27.657+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Un2PZ44BHqZaefJ8mJsg', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5210, '_primary_term': 4}
+[2024-03-22T19:07:27.668+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:07:27.670+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'VH2PZ44BHqZaefJ8mJst', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5212, '_primary_term': 4}
+[2024-03-22T19:07:27.678+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.679+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Vn2PZ44BHqZaefJ8mJs6', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5214, '_primary_term': 4}
+[2024-03-22T19:07:27.687+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.690+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'V32PZ44BHqZaefJ8mJtA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5216, '_primary_term': 4}
+[2024-03-22T19:07:27.711+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.020s]
+[2024-03-22T19:07:27.712+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'WX2PZ44BHqZaefJ8mJtO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5217, '_primary_term': 4}
+[2024-03-22T19:07:27.720+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.721+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'XH2PZ44BHqZaefJ8mJtj', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5220, '_primary_term': 4}
+[2024-03-22T19:07:27.728+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.729+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Xn2PZ44BHqZaefJ8mJtq', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5222, '_primary_term': 4}
+[2024-03-22T19:07:27.739+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:07:27.741+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'YH2PZ44BHqZaefJ8mJt1', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5224, '_primary_term': 4}
+[2024-03-22T19:07:27.750+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.751+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'YX2PZ44BHqZaefJ8mJt_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5226, '_primary_term': 4}
+[2024-03-22T19:07:27.763+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:07:27.764+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Y32PZ44BHqZaefJ8mJuN', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5228, '_primary_term': 4}
+[2024-03-22T19:07:27.769+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.770+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'ZX2PZ44BHqZaefJ8mJuV', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5230, '_primary_term': 4}
+[2024-03-22T19:07:27.775+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:27.776+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Z32PZ44BHqZaefJ8mJuc', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5232, '_primary_term': 4}
+[2024-03-22T19:07:27.783+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.784+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'aX2PZ44BHqZaefJ8mJuh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5233, '_primary_term': 4}
+[2024-03-22T19:07:27.792+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.792+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'bH2PZ44BHqZaefJ8mJup', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5236, '_primary_term': 4}
+[2024-03-22T19:07:27.802+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.803+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'bn2PZ44BHqZaefJ8mJu1', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5238, '_primary_term': 4}
+[2024-03-22T19:07:27.810+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.811+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'b32PZ44BHqZaefJ8mJu8', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5239, '_primary_term': 4}
+[2024-03-22T19:07:27.817+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:27.818+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'cX2PZ44BHqZaefJ8mJvE', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5241, '_primary_term': 4}
+[2024-03-22T19:07:27.825+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.828+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'dH2PZ44BHqZaefJ8mJvL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5243, '_primary_term': 4}
+[2024-03-22T19:07:27.837+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.838+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'dX2PZ44BHqZaefJ8mJvW', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5246, '_primary_term': 4}
+[2024-03-22T19:07:27.846+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:27.848+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'd32PZ44BHqZaefJ8mJvg', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5247, '_primary_term': 4}
+[2024-03-22T19:07:27.869+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.020s]
+[2024-03-22T19:07:27.871+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'en2PZ44BHqZaefJ8mJvs', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5249, '_primary_term': 4}
+[2024-03-22T19:07:27.886+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:07:27.887+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'e32PZ44BHqZaefJ8mZsC', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5251, '_primary_term': 4}
+[2024-03-22T19:07:27.896+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.897+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'fn2PZ44BHqZaefJ8mZsR', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5254, '_primary_term': 4}
+[2024-03-22T19:07:27.905+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.908+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'gH2PZ44BHqZaefJ8mZsb', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5257, '_primary_term': 4}
+[2024-03-22T19:07:27.921+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-22T19:07:27.922+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'g32PZ44BHqZaefJ8mZso', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5259, '_primary_term': 4}
+[2024-03-22T19:07:27.932+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.934+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'hX2PZ44BHqZaefJ8mZs0', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5260, '_primary_term': 4}
+[2024-03-22T19:07:27.952+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-22T19:07:27.953+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'hn2PZ44BHqZaefJ8mZtB', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5263, '_primary_term': 4}
+[2024-03-22T19:07:27.962+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:27.962+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'iX2PZ44BHqZaefJ8mZtU', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5265, '_primary_term': 4}
+[2024-03-22T19:07:27.986+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-22T19:07:27.988+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'i32PZ44BHqZaefJ8mZte', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5267, '_primary_term': 4}
+[2024-03-22T19:07:28.004+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:07:28.006+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'jX2PZ44BHqZaefJ8mZt3', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5269, '_primary_term': 4}
+[2024-03-22T19:07:28.013+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.013+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'j32PZ44BHqZaefJ8mZuI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5270, '_primary_term': 4}
+[2024-03-22T19:07:28.020+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.021+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'kH2PZ44BHqZaefJ8mZuP', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5273, '_primary_term': 4}
+[2024-03-22T19:07:28.037+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:07:28.038+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'kn2PZ44BHqZaefJ8mZuX', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5274, '_primary_term': 4}
+[2024-03-22T19:07:28.058+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-22T19:07:28.059+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'lX2PZ44BHqZaefJ8mZut', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5276, '_primary_term': 4}
+[2024-03-22T19:07:28.097+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.036s]
+[2024-03-22T19:07:28.098+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'ln2PZ44BHqZaefJ8mZu_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5278, '_primary_term': 4}
+[2024-03-22T19:07:28.114+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:07:28.116+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'mH2PZ44BHqZaefJ8mZvm', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5281, '_primary_term': 4}
+[2024-03-22T19:07:28.151+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.033s]
+[2024-03-22T19:07:28.153+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'mn2PZ44BHqZaefJ8mZv5', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5282, '_primary_term': 4}
+[2024-03-22T19:07:28.178+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.023s]
+[2024-03-22T19:07:28.179+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'nH2PZ44BHqZaefJ8mpse', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5285, '_primary_term': 4}
+[2024-03-22T19:07:28.188+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:28.189+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'n32PZ44BHqZaefJ8mps2', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5286, '_primary_term': 4}
+[2024-03-22T19:07:28.197+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:28.198+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'oH2PZ44BHqZaefJ8mps_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5289, '_primary_term': 4}
+[2024-03-22T19:07:28.206+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:28.206+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'on2PZ44BHqZaefJ8mptI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5290, '_primary_term': 4}
+[2024-03-22T19:07:28.212+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.213+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'pX2PZ44BHqZaefJ8mptR', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5293, '_primary_term': 4}
+[2024-03-22T19:07:28.218+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.219+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'p32PZ44BHqZaefJ8mptX', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5294, '_primary_term': 4}
+[2024-03-22T19:07:28.224+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.225+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'qH2PZ44BHqZaefJ8mptd', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5296, '_primary_term': 4}
+[2024-03-22T19:07:28.249+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.023s]
+[2024-03-22T19:07:28.251+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'qn2PZ44BHqZaefJ8mptj', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5298, '_primary_term': 4}
+[2024-03-22T19:07:28.262+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:28.263+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'rX2PZ44BHqZaefJ8mpt-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5300, '_primary_term': 4}
+[2024-03-22T19:07:28.274+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:07:28.275+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'r32PZ44BHqZaefJ8mpuM', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5303, '_primary_term': 4}
+[2024-03-22T19:07:28.286+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:28.287+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'sX2PZ44BHqZaefJ8mpuW', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5304, '_primary_term': 4}
+[2024-03-22T19:07:28.297+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:07:28.299+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'sn2PZ44BHqZaefJ8mpuh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5306, '_primary_term': 4}
+[2024-03-22T19:07:28.312+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:28.313+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'tX2PZ44BHqZaefJ8mpuw', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5309, '_primary_term': 4}
+[2024-03-22T19:07:28.359+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.043s]
+[2024-03-22T19:07:28.361+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'tn2PZ44BHqZaefJ8mpu_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5310, '_primary_term': 4}
+[2024-03-22T19:07:28.383+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-22T19:07:28.384+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'uX2PZ44BHqZaefJ8mpvu', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5313, '_primary_term': 4}
+[2024-03-22T19:07:28.390+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.391+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'vH2PZ44BHqZaefJ8m5sC', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5316, '_primary_term': 4}
+[2024-03-22T19:07:28.397+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.397+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'vn2PZ44BHqZaefJ8m5sJ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5318, '_primary_term': 4}
+[2024-03-22T19:07:28.404+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.404+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'v32PZ44BHqZaefJ8m5sP', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5319, '_primary_term': 4}
+[2024-03-22T19:07:28.409+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:28.409+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'wn2PZ44BHqZaefJ8m5sV', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5322, '_primary_term': 4}
+[2024-03-22T19:07:28.415+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.416+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'xH2PZ44BHqZaefJ8m5sb', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5323, '_primary_term': 4}
+[2024-03-22T19:07:28.424+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.425+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'xX2PZ44BHqZaefJ8m5sj', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5325, '_primary_term': 4}
+[2024-03-22T19:07:28.433+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:28.434+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'yH2PZ44BHqZaefJ8m5sq', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5328, '_primary_term': 4}
+[2024-03-22T19:07:28.444+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:28.444+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'yn2PZ44BHqZaefJ8m5s1', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5330, '_primary_term': 4}
+[2024-03-22T19:07:28.452+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.453+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'zH2PZ44BHqZaefJ8m5s_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5331, '_primary_term': 4}
+[2024-03-22T19:07:28.457+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:28.457+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'zn2PZ44BHqZaefJ8m5tG', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5334, '_primary_term': 4}
+[2024-03-22T19:07:28.462+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:28.462+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'z32PZ44BHqZaefJ8m5tL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5336, '_primary_term': 4}
+[2024-03-22T19:07:28.471+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:28.471+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '0n2PZ44BHqZaefJ8m5tQ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5337, '_primary_term': 4}
+[2024-03-22T19:07:28.482+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:28.483+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '032PZ44BHqZaefJ8m5tZ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5339, '_primary_term': 4}
+[2024-03-22T19:07:28.509+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.024s]
+[2024-03-22T19:07:28.510+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '1X2PZ44BHqZaefJ8m5to', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5341, '_primary_term': 4}
+[2024-03-22T19:07:28.518+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.518+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '2H2PZ44BHqZaefJ8m5uB', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5343, '_primary_term': 4}
+[2024-03-22T19:07:28.524+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-22T19:07:28.524+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '2n2PZ44BHqZaefJ8m5uI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5346, '_primary_term': 4}
+[2024-03-22T19:07:28.530+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.530+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '232PZ44BHqZaefJ8m5uO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5347, '_primary_term': 4}
+[2024-03-22T19:07:28.545+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:07:28.546+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '3n2PZ44BHqZaefJ8m5uU', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5350, '_primary_term': 4}
+[2024-03-22T19:07:28.552+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.553+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '4H2PZ44BHqZaefJ8m5uk', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5352, '_primary_term': 4}
+[2024-03-22T19:07:28.558+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.558+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '4X2PZ44BHqZaefJ8m5ur', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5353, '_primary_term': 4}
+[2024-03-22T19:07:28.574+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:07:28.575+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '432PZ44BHqZaefJ8m5uw', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5355, '_primary_term': 4}
+[2024-03-22T19:07:28.584+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.585+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '5n2PZ44BHqZaefJ8m5vE', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5358, '_primary_term': 4}
+[2024-03-22T19:07:28.595+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:28.597+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '6H2PZ44BHqZaefJ8m5vM', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5360, '_primary_term': 4}
+[2024-03-22T19:07:28.606+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:07:28.606+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '6n2PZ44BHqZaefJ8m5vW', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5362, '_primary_term': 4}
+[2024-03-22T19:07:28.615+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:28.615+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '632PZ44BHqZaefJ8m5vh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5363, '_primary_term': 4}
+[2024-03-22T19:07:28.620+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.621+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '7n2PZ44BHqZaefJ8m5vp', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5365, '_primary_term': 4}
+[2024-03-22T19:07:28.624+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:28.625+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '8H2PZ44BHqZaefJ8m5vu', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5368, '_primary_term': 4}
+[2024-03-22T19:07:28.630+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.631+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '8n2PZ44BHqZaefJ8m5vy', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5370, '_primary_term': 4}
+[2024-03-22T19:07:28.637+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.638+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '9H2PZ44BHqZaefJ8m5v5', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5371, '_primary_term': 4}
+[2024-03-22T19:07:28.646+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:07:28.647+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '9X2PZ44BHqZaefJ8nJsA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5373, '_primary_term': 4}
+[2024-03-22T19:07:28.660+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:07:28.662+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '932PZ44BHqZaefJ8nJsL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5375, '_primary_term': 4}
+[2024-03-22T19:07:28.689+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.020s]
+[2024-03-22T19:07:28.690+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '-n2PZ44BHqZaefJ8nJsh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5377, '_primary_term': 4}
+[2024-03-22T19:07:28.703+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-22T19:07:28.703+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '-32PZ44BHqZaefJ8nJs1', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5379, '_primary_term': 4}
+[2024-03-22T19:07:28.707+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-22T19:07:28.708+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '_n2PZ44BHqZaefJ8nJtA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5382, '_primary_term': 4}
+[2024-03-22T19:07:28.715+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:07:28.716+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '_32PZ44BHqZaefJ8nJtG', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5384, '_primary_term': 4}
+[2024-03-22T19:07:28.727+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:07:28.729+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'An2PZ44BHqZaefJ8nJxO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5385, '_primary_term': 4}
+[2024-03-22T19:07:28.752+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-22T19:07:28.753+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'A32PZ44BHqZaefJ8nJxe', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5387, '_primary_term': 4}
+[2024-03-22T19:07:28.758+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.758+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Bn2PZ44BHqZaefJ8nJxz', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5390, '_primary_term': 4}
+[2024-03-22T19:07:28.764+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-22T19:07:28.765+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'CH2PZ44BHqZaefJ8nJx4', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5391, '_primary_term': 4}
+[2024-03-22T19:07:28.780+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:07:28.890+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Cn2PZ44BHqZaefJ8nJyB', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5394, '_primary_term': 4}
+[2024-03-22T19:07:29.078+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.092s]
+[2024-03-22T19:07:29.097+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'DH2PZ44BHqZaefJ8nZyA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5396, '_primary_term': 4}
+[2024-03-22T19:07:29.233+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.074s]
+[2024-03-22T19:07:29.242+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'DX2PZ44BHqZaefJ8npwp', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5398, '_primary_term': 4}
+[2024-03-22T19:07:29.302+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.046s]
+[2024-03-22T19:07:29.332+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'EH2PZ44BHqZaefJ8npxs', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5399, '_primary_term': 4}
+[2024-03-22T19:07:29.373+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.030s]
+[2024-03-22T19:07:29.378+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'EX2PZ44BHqZaefJ8npzH', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5401, '_primary_term': 4}
+[2024-03-22T19:07:29.522+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.101s]
+[2024-03-22T19:07:29.551+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'FH2PZ44BHqZaefJ8npz1', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5404, '_primary_term': 4}
+[2024-03-22T19:07:29.759+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.176s]
+[2024-03-22T19:07:29.811+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Fn2PZ44BHqZaefJ8n5zA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5406, '_primary_term': 4}
+[2024-03-22T19:07:29.858+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-22T19:07:29.862+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'GH2PZ44BHqZaefJ8oJyu', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5407, '_primary_term': 4}
+[2024-03-22T19:07:29.906+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.030s]
+[2024-03-22T19:07:29.931+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'GX2PZ44BHqZaefJ8oJze', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5409, '_primary_term': 4}
+[2024-03-22T19:07:30.096+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.075s]
+[2024-03-22T19:07:30.284+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'G32PZ44BHqZaefJ8oZxx', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5411, '_primary_term': 4}
+[2024-03-22T19:07:30.361+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-22T19:07:30.366+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Hn2PZ44BHqZaefJ8opyh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5413, '_primary_term': 4}
+[2024-03-22T19:07:30.604+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.183s]
+[2024-03-22T19:07:30.649+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'H32PZ44BHqZaefJ8opz3', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5416, '_primary_term': 4}
+[2024-03-22T19:07:31.150+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.420s]
+[2024-03-22T19:07:31.261+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'In2PZ44BHqZaefJ8pJyu', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5418, '_primary_term': 4}
+[2024-03-22T19:07:43.051+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:11.617s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 341, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='elasticsearch', port=9200): Read timed out. (read timeout=10)
+[2024-03-22T19:07:45.087+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 341, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='elasticsearch', port=9200): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_elia_DAG.py", line 66, in transfer_data
+    res=es.index(index="milestone", doc_type = "doc", body=doc)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 168, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 411, in index
+    body=body,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 415, in perform_request
+    raise e
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 388, in perform_request
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 265, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='elasticsearch', port=9200): Read timed out. (read timeout=10))
+[2024-03-22T19:07:45.413+0000] {taskinstance.py:1412} INFO - Marking task as FAILED. dag_id=milestone3, task_id=transfer_data_to_kibana, execution_date=20240322T190500, start_date=20240322T190725, end_date=20240322T190745
+[2024-03-22T19:07:45.494+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 286 for task transfer_data_to_kibana (ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='elasticsearch', port=9200): Read timed out. (read timeout=10)); 2335)
+[2024-03-22T19:07:45.504+0000] {local_task_job.py:227} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-03-22T19:07:45.515+0000] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 2335. PIDs of all processes in the group: [2335]
+[2024-03-22T19:07:45.517+0000] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 2335
+[2024-03-22T19:07:45.526+0000] {process_utils.py:75} INFO - Process psutil.Process(pid=2335, status='terminated', exitcode=1, started='19:07:25') (2335) terminated with exit code 1

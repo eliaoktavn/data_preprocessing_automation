@@ -1,0 +1,23 @@
+[2024-03-22T19:05:00.219+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.fetch_data_from_progresql manual__2024-03-22T19:04:55.481601+00:00 [queued]>
+[2024-03-22T19:05:00.268+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.fetch_data_from_progresql manual__2024-03-22T19:04:55.481601+00:00 [queued]>
+[2024-03-22T19:05:00.270+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T19:05:00.273+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2024-03-22T19:05:00.274+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T19:05:00.323+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): fetch_data_from_progresql> on 2024-03-22 19:04:55.481601+00:00
+[2024-03-22T19:05:00.335+0000] {standard_task_runner.py:52} INFO - Started process 2261 to run task
+[2024-03-22T19:05:00.346+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'fetch_data_from_progresql', 'manual__2024-03-22T19:04:55.481601+00:00', '--job-id', '269', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmpkxn29ni4', '--error-file', '/tmp/tmppopxwmo2']
+[2024-03-22T19:05:00.348+0000] {standard_task_runner.py:80} INFO - Job 269: Subtask fetch_data_from_progresql
+[2024-03-22T19:05:00.562+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.fetch_data_from_progresql manual__2024-03-22T19:04:55.481601+00:00 [running]> on host b79cb602ca97
+[2024-03-22T19:05:00.898+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=fetch_data_from_progresql
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T19:04:55.481601+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-03-22T19:04:55.481601+00:00
+[2024-03-22T19:05:02.624+0000] {python.py:173} INFO - Done. Returned value was: None
+[2024-03-22T19:05:02.985+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=milestone3, task_id=fetch_data_from_progresql, execution_date=20240322T190455, start_date=20240322T190500, end_date=20240322T190502
+[2024-03-22T19:05:03.603+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-22T19:05:04.710+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

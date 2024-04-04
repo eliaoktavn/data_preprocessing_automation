@@ -1,0 +1,40 @@
+[2024-03-22T18:40:03.175+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:38:00+00:00 [queued]>
+[2024-03-22T18:40:03.181+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:38:00+00:00 [queued]>
+[2024-03-22T18:40:03.182+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:40:03.182+0000] {taskinstance.py:1369} INFO - Starting attempt 2 of 2
+[2024-03-22T18:40:03.182+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:40:03.190+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): fetch_data_from_progresql> on 2024-03-22 18:38:00+00:00
+[2024-03-22T18:40:03.198+0000] {standard_task_runner.py:52} INFO - Started process 1615 to run task
+[2024-03-22T18:40:03.204+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'fetch_data_from_progresql', 'scheduled__2024-03-22T18:38:00+00:00', '--job-id', '164', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmposqh1dq4', '--error-file', '/tmp/tmp832608jf']
+[2024-03-22T18:40:03.210+0000] {standard_task_runner.py:80} INFO - Job 164: Subtask fetch_data_from_progresql
+[2024-03-22T18:40:03.290+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:38:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T18:40:03.341+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=fetch_data_from_progresql
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T18:38:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T18:38:00+00:00
+[2024-03-22T18:40:03.342+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_elia_DAG.py", line 25, in fetch_data
+    connection = psycopg2.connect(connection_string)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "postgres" (172.19.0.3) and accepting
+	TCP/IP connections on port 5434?
+
+[2024-03-22T18:40:03.350+0000] {taskinstance.py:1412} INFO - Marking task as FAILED. dag_id=milestone3, task_id=fetch_data_from_progresql, execution_date=20240322T183800, start_date=20240322T184003, end_date=20240322T184003
+[2024-03-22T18:40:03.355+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 164 for task fetch_data_from_progresql (could not connect to server: Connection refused
+	Is the server running on host "postgres" (172.19.0.3) and accepting
+	TCP/IP connections on port 5434?
+; 1615)
+[2024-03-22T18:40:03.382+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-22T18:40:03.412+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

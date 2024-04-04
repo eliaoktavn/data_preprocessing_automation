@@ -1,0 +1,23 @@
+[2024-03-22T20:30:27.918+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.clean_data scheduled__2024-03-22T20:00:00+00:00 [queued]>
+[2024-03-22T20:30:27.924+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.clean_data scheduled__2024-03-22T20:00:00+00:00 [queued]>
+[2024-03-22T20:30:27.924+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T20:30:27.924+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2024-03-22T20:30:27.925+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T20:30:27.933+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): clean_data> on 2024-03-22 20:00:00+00:00
+[2024-03-22T20:30:27.937+0000] {standard_task_runner.py:52} INFO - Started process 3340 to run task
+[2024-03-22T20:30:27.940+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'clean_data', 'scheduled__2024-03-22T20:00:00+00:00', '--job-id', '327', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmp1_vel0wo', '--error-file', '/tmp/tmpl1zge_oc']
+[2024-03-22T20:30:27.941+0000] {standard_task_runner.py:80} INFO - Job 327: Subtask clean_data
+[2024-03-22T20:30:28.010+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.clean_data scheduled__2024-03-22T20:00:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T20:30:28.087+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=clean_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T20:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T20:00:00+00:00
+[2024-03-22T20:30:28.564+0000] {python.py:173} INFO - Done. Returned value was: None
+[2024-03-22T20:30:28.609+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=milestone3, task_id=clean_data, execution_date=20240322T200000, start_date=20240322T203027, end_date=20240322T203028
+[2024-03-22T20:30:28.665+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-22T20:30:28.762+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,841 @@
+[2024-03-22T19:04:07.128+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:03:00+00:00 [queued]>
+[2024-03-22T19:04:07.146+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:03:00+00:00 [queued]>
+[2024-03-22T19:04:07.146+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T19:04:07.146+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2024-03-22T19:04:07.146+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T19:04:07.157+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): transfer_data_to_kibana> on 2024-03-22 19:03:00+00:00
+[2024-03-22T19:04:07.170+0000] {standard_task_runner.py:52} INFO - Started process 2239 to run task
+[2024-03-22T19:04:07.185+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'transfer_data_to_kibana', 'scheduled__2024-03-22T19:03:00+00:00', '--job-id', '266', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmp6ki3m3bk', '--error-file', '/tmp/tmpjlpkcd9f']
+[2024-03-22T19:04:07.189+0000] {standard_task_runner.py:80} INFO - Job 266: Subtask transfer_data_to_kibana
+[2024-03-22T19:04:07.287+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:03:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T19:04:07.363+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=transfer_data_to_kibana
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T19:03:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T19:03:00+00:00
+[2024-03-22T19:04:11.022+0000] {logging_mixin.py:115} WARNING - /home/***/.local/lib/python3.7/site-packages/elasticsearch/connection/base.py:208 ElasticsearchWarning: [types removal] Specifying types in document index requests is deprecated, use the typeless endpoints instead (/{index}/_doc/{id}, /{index}/_doc, or /{index}/_create/{id}).
+[2024-03-22T19:04:11.025+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:3.557s]
+[2024-03-22T19:04:11.027+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'YXaMZ44BeGvon-ankyZp', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 0, '_primary_term': 1}
+[2024-03-22T19:04:11.155+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.117s]
+[2024-03-22T19:04:11.162+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'YnaMZ44BeGvon-anmCZD', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 1, '_primary_term': 1}
+[2024-03-22T19:04:11.221+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.057s]
+[2024-03-22T19:04:11.222+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Y3aMZ44BeGvon-anmCak', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 2, '_primary_term': 1}
+[2024-03-22T19:04:11.256+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.034s]
+[2024-03-22T19:04:11.257+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'ZHaMZ44BeGvon-anmCbh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 3, '_primary_term': 1}
+[2024-03-22T19:04:11.295+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.037s]
+[2024-03-22T19:04:11.299+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'ZXaMZ44BeGvon-anmSYE', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 4, '_primary_term': 1}
+[2024-03-22T19:04:11.349+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-22T19:04:11.351+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'ZnaMZ44BeGvon-anmSYv', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 5, '_primary_term': 1}
+[2024-03-22T19:04:11.412+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.060s]
+[2024-03-22T19:04:11.413+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Z3aMZ44BeGvon-anmSZd', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 6, '_primary_term': 1}
+[2024-03-22T19:04:11.449+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.036s]
+[2024-03-22T19:04:11.451+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'aHaMZ44BeGvon-anmSaZ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 7, '_primary_term': 1}
+[2024-03-22T19:04:11.490+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.038s]
+[2024-03-22T19:04:11.495+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'aXaMZ44BeGvon-anmSa-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 8, '_primary_term': 1}
+[2024-03-22T19:04:11.550+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-22T19:04:11.551+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'anaMZ44BeGvon-anmSb3', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 9, '_primary_term': 1}
+[2024-03-22T19:04:11.583+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-22T19:04:11.587+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'a3aMZ44BeGvon-anmiYj', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 10, '_primary_term': 1}
+[2024-03-22T19:04:11.621+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-22T19:04:11.623+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'bHaMZ44BeGvon-anmiZI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 11, '_primary_term': 1}
+[2024-03-22T19:04:11.642+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-22T19:04:11.644+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'bXaMZ44BeGvon-anmiZr', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 12, '_primary_term': 1}
+[2024-03-22T19:04:11.697+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.051s]
+[2024-03-22T19:04:11.698+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'bnaMZ44BeGvon-anmiaD', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 13, '_primary_term': 1}
+[2024-03-22T19:04:11.714+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:04:11.715+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'b3aMZ44BeGvon-anmia2', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 14, '_primary_term': 1}
+[2024-03-22T19:04:11.756+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.040s]
+[2024-03-22T19:04:11.758+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'cHaMZ44BeGvon-anmibG', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 15, '_primary_term': 1}
+[2024-03-22T19:04:11.791+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-22T19:04:11.797+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'cXaMZ44BeGvon-anmibz', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 16, '_primary_term': 1}
+[2024-03-22T19:04:11.899+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.101s]
+[2024-03-22T19:04:11.902+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'cnaMZ44BeGvon-anmyYZ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 17, '_primary_term': 1}
+[2024-03-22T19:04:11.968+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.064s]
+[2024-03-22T19:04:11.970+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'c3aMZ44BeGvon-anmyaE', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 18, '_primary_term': 1}
+[2024-03-22T19:04:12.078+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.106s]
+[2024-03-22T19:04:12.079+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'dHaMZ44BeGvon-anmybI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 19, '_primary_term': 1}
+[2024-03-22T19:04:12.122+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.042s]
+[2024-03-22T19:04:12.124+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'dXaMZ44BeGvon-annCY_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 20, '_primary_term': 1}
+[2024-03-22T19:04:12.170+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-22T19:04:12.171+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'dnaMZ44BeGvon-annCZk', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 21, '_primary_term': 1}
+[2024-03-22T19:04:12.214+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-22T19:04:12.220+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'd3aMZ44BeGvon-annCaP', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 22, '_primary_term': 1}
+[2024-03-22T19:04:12.370+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.145s]
+[2024-03-22T19:04:12.374+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'eHaMZ44BeGvon-annCb1', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 23, '_primary_term': 1}
+[2024-03-22T19:04:13.040+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.655s]
+[2024-03-22T19:04:13.072+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'eXaMZ44BeGvon-annSaN', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 24, '_primary_term': 1}
+[2024-03-22T19:04:13.322+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.229s]
+[2024-03-22T19:04:13.326+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'enaMZ44BeGvon-anoCaP', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 25, '_primary_term': 1}
+[2024-03-22T19:04:13.395+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.061s]
+[2024-03-22T19:04:13.396+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'e3aMZ44BeGvon-anoSYa', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 26, '_primary_term': 1}
+[2024-03-22T19:04:13.565+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.169s]
+[2024-03-22T19:04:13.568+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'fHaMZ44BeGvon-anoSaM', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 27, '_primary_term': 1}
+[2024-03-22T19:04:13.792+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.218s]
+[2024-03-22T19:04:13.806+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'fXaMZ44BeGvon-anoiaA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 28, '_primary_term': 1}
+[2024-03-22T19:04:13.852+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-22T19:04:13.856+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'fnaMZ44BeGvon-anoib_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 29, '_primary_term': 1}
+[2024-03-22T19:04:13.881+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.024s]
+[2024-03-22T19:04:13.882+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'f3aMZ44BeGvon-anoyYk', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 30, '_primary_term': 1}
+[2024-03-22T19:04:13.894+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-22T19:04:13.895+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'gHaMZ44BeGvon-anoyY8', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 31, '_primary_term': 1}
+[2024-03-22T19:04:13.907+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-22T19:04:13.908+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'gXaMZ44BeGvon-anoyZJ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 32, '_primary_term': 1}
+[2024-03-22T19:04:13.922+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:04:13.924+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'gnaMZ44BeGvon-anoyZW', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 33, '_primary_term': 1}
+[2024-03-22T19:04:13.943+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-22T19:04:13.943+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'g3aMZ44BeGvon-anoyZp', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 34, '_primary_term': 1}
+[2024-03-22T19:04:13.953+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:04:13.953+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'hHaMZ44BeGvon-anoyZ5', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 35, '_primary_term': 1}
+[2024-03-22T19:04:13.970+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:13.970+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'hXaMZ44BeGvon-anoyaD', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 36, '_primary_term': 1}
+[2024-03-22T19:04:13.977+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-22T19:04:13.977+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'hnaMZ44BeGvon-anoyaT', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 37, '_primary_term': 1}
+[2024-03-22T19:04:13.987+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:04:13.987+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'h3aMZ44BeGvon-anoyac', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 38, '_primary_term': 1}
+[2024-03-22T19:04:13.997+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:04:13.997+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'iHaMZ44BeGvon-anoyal', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 39, '_primary_term': 1}
+[2024-03-22T19:04:14.013+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:04:14.014+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'iXaMZ44BeGvon-anoyav', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 40, '_primary_term': 1}
+[2024-03-22T19:04:14.024+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:04:14.025+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'inaMZ44BeGvon-anoybB', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 41, '_primary_term': 1}
+[2024-03-22T19:04:14.042+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:14.043+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'i3aMZ44BeGvon-anoybN', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 42, '_primary_term': 1}
+[2024-03-22T19:04:14.054+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:04:14.055+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'jHaMZ44BeGvon-anoybd', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 43, '_primary_term': 1}
+[2024-03-22T19:04:14.066+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:04:14.067+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'jXaMZ44BeGvon-anoybp', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 44, '_primary_term': 1}
+[2024-03-22T19:04:14.077+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:04:14.078+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'jnaMZ44BeGvon-anoyb2', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 45, '_primary_term': 1}
+[2024-03-22T19:04:14.085+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:04:14.086+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'j3aMZ44BeGvon-anpCYA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 46, '_primary_term': 1}
+[2024-03-22T19:04:14.099+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:04:14.099+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'kHaMZ44BeGvon-anpCYI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 47, '_primary_term': 1}
+[2024-03-22T19:04:14.126+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.026s]
+[2024-03-22T19:04:14.128+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'kXaMZ44BeGvon-anpCYX', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 48, '_primary_term': 1}
+[2024-03-22T19:04:14.150+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-22T19:04:14.151+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'knaMZ44BeGvon-anpCY2', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 49, '_primary_term': 1}
+[2024-03-22T19:04:14.179+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-22T19:04:14.180+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'k3aMZ44BeGvon-anpCZL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 50, '_primary_term': 1}
+[2024-03-22T19:04:14.189+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-22T19:04:14.190+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'lHaMZ44BeGvon-anpCZm', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 51, '_primary_term': 1}
+[2024-03-22T19:04:14.213+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-22T19:04:14.214+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'lXaMZ44BeGvon-anpCZy', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 52, '_primary_term': 1}
+[2024-03-22T19:04:14.229+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:04:14.230+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'lnaMZ44BeGvon-anpCaJ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 53, '_primary_term': 1}
+[2024-03-22T19:04:14.255+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.023s]
+[2024-03-22T19:04:14.257+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'l3aMZ44BeGvon-anpCaa', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 54, '_primary_term': 1}
+[2024-03-22T19:04:14.296+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.035s]
+[2024-03-22T19:04:14.298+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'mHaMZ44BeGvon-anpCbA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 55, '_primary_term': 1}
+[2024-03-22T19:04:14.314+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:04:14.314+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'mXaMZ44BeGvon-anpCbe', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 56, '_primary_term': 1}
+[2024-03-22T19:04:14.351+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-22T19:04:14.352+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'mnaMZ44BeGvon-anpCbx', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 57, '_primary_term': 1}
+[2024-03-22T19:04:14.384+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-22T19:04:14.385+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'm3aMZ44BeGvon-anpSYT', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 58, '_primary_term': 1}
+[2024-03-22T19:04:14.438+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.050s]
+[2024-03-22T19:04:14.439+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'nHaMZ44BeGvon-anpSZE', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 59, '_primary_term': 1}
+[2024-03-22T19:04:14.484+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-22T19:04:14.486+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'nXaMZ44BeGvon-anpSZy', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 60, '_primary_term': 1}
+[2024-03-22T19:04:14.500+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-22T19:04:14.502+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'nnaMZ44BeGvon-anpSab', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 61, '_primary_term': 1}
+[2024-03-22T19:04:14.511+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-22T19:04:14.516+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'n3aMZ44BeGvon-anpSap', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 62, '_primary_term': 1}
+[2024-03-22T19:04:14.557+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.039s]
+[2024-03-22T19:04:14.560+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'oHaMZ44BeGvon-anpSbH', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 63, '_primary_term': 1}
+[2024-03-22T19:04:14.590+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.025s]
+[2024-03-22T19:04:14.591+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'oXaMZ44BeGvon-anpSbs', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 64, '_primary_term': 1}
+[2024-03-22T19:04:14.620+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.028s]
+[2024-03-22T19:04:14.621+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'onaMZ44BeGvon-anpiYG', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 65, '_primary_term': 1}
+[2024-03-22T19:04:14.693+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.071s]
+[2024-03-22T19:04:14.694+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'o3aMZ44BeGvon-anpiYl', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 66, '_primary_term': 1}
+[2024-03-22T19:04:14.754+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.059s]
+[2024-03-22T19:04:14.756+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'pHaMZ44BeGvon-anpiZv', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 67, '_primary_term': 1}
+[2024-03-22T19:04:14.836+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.078s]
+[2024-03-22T19:04:14.837+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'pXaMZ44BeGvon-anpiaz', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 68, '_primary_term': 1}
+[2024-03-22T19:04:14.876+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.033s]
+[2024-03-22T19:04:14.878+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'pnaMZ44BeGvon-anpyYL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 69, '_primary_term': 1}
+[2024-03-22T19:04:14.899+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-22T19:04:14.902+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'p3aMZ44BeGvon-anpyYj', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 70, '_primary_term': 1}
+[2024-03-22T19:04:14.921+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:14.922+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'qHaMZ44BeGvon-anpyY9', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 71, '_primary_term': 1}
+[2024-03-22T19:04:14.944+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.021s]
+[2024-03-22T19:04:14.945+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'qXaMZ44BeGvon-anpyZN', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 72, '_primary_term': 1}
+[2024-03-22T19:04:14.966+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.020s]
+[2024-03-22T19:04:14.967+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'qnaMZ44BeGvon-anpyZn', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 73, '_primary_term': 1}
+[2024-03-22T19:04:14.986+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-22T19:04:14.988+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'q3aMZ44BeGvon-anpyZ6', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 74, '_primary_term': 1}
+[2024-03-22T19:04:15.018+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.028s]
+[2024-03-22T19:04:15.020+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'rHaMZ44BeGvon-anpyaU', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 75, '_primary_term': 1}
+[2024-03-22T19:04:15.035+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:04:15.036+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'rXaMZ44BeGvon-anpyaw', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 76, '_primary_term': 1}
+[2024-03-22T19:04:15.056+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-22T19:04:15.057+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'rnaMZ44BeGvon-anpya_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 77, '_primary_term': 1}
+[2024-03-22T19:04:15.075+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:15.076+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'r3aMZ44BeGvon-anpybX', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 78, '_primary_term': 1}
+[2024-03-22T19:04:15.090+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:04:15.093+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'sHaMZ44BeGvon-anpybn', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 79, '_primary_term': 1}
+[2024-03-22T19:04:15.141+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.045s]
+[2024-03-22T19:04:15.142+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'sXaMZ44BeGvon-anpyb_', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 80, '_primary_term': 1}
+[2024-03-22T19:04:15.160+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-22T19:04:15.161+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'snaMZ44BeGvon-anqCYp', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 81, '_primary_term': 1}
+[2024-03-22T19:04:15.178+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:04:15.179+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 's3aMZ44BeGvon-anqCZA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 82, '_primary_term': 1}
+[2024-03-22T19:04:15.213+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.034s]
+[2024-03-22T19:04:15.215+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'tHaMZ44BeGvon-anqCZO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 83, '_primary_term': 1}
+[2024-03-22T19:04:15.281+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.047s]
+[2024-03-22T19:04:15.282+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'tXaMZ44BeGvon-anqCaL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 84, '_primary_term': 1}
+[2024-03-22T19:04:15.295+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:04:15.296+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'tnaMZ44BeGvon-anqCa0', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 85, '_primary_term': 1}
+[2024-03-22T19:04:15.337+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-22T19:04:15.338+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 't3aMZ44BeGvon-anqCbC', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 86, '_primary_term': 1}
+[2024-03-22T19:04:15.389+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.050s]
+[2024-03-22T19:04:15.393+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'uXaMZ44BeGvon-anqCbs', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 88, '_primary_term': 1}
+[2024-03-22T19:04:15.411+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:15.412+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'unaMZ44BeGvon-anqSYn', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 89, '_primary_term': 1}
+[2024-03-22T19:04:15.431+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-22T19:04:15.432+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'vHaMZ44BeGvon-anqSY7', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 92, '_primary_term': 1}
+[2024-03-22T19:04:15.468+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.034s]
+[2024-03-22T19:04:15.469+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'vnaMZ44BeGvon-anqSZO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 94, '_primary_term': 1}
+[2024-03-22T19:04:15.487+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:15.488+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'wHaMZ44BeGvon-anqSZw', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 96, '_primary_term': 1}
+[2024-03-22T19:04:15.527+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.037s]
+[2024-03-22T19:04:15.528+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'w3aMZ44BeGvon-anqSaH', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 98, '_primary_term': 1}
+[2024-03-22T19:04:15.552+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.020s]
+[2024-03-22T19:04:15.552+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'xHaMZ44BeGvon-anqSav', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 100, '_primary_term': 1}
+[2024-03-22T19:04:15.668+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.115s]
+[2024-03-22T19:04:15.669+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'xnaMZ44BeGvon-anqSbs', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 102, '_primary_term': 1}
+[2024-03-22T19:04:15.799+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.130s]
+[2024-03-22T19:04:15.803+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'yHaMZ44BeGvon-anqiZY', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 104, '_primary_term': 1}
+[2024-03-22T19:04:15.868+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.063s]
+[2024-03-22T19:04:15.868+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'y3aMZ44BeGvon-anqibF', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 106, '_primary_term': 1}
+[2024-03-22T19:04:15.905+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.036s]
+[2024-03-22T19:04:15.906+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'zXaMZ44BeGvon-anqyYE', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 108, '_primary_term': 1}
+[2024-03-22T19:04:16.485+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.578s]
+[2024-03-22T19:04:16.499+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'znaMZ44BeGvon-anqyYw', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 109, '_primary_term': 1}
+[2024-03-22T19:04:16.663+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.158s]
+[2024-03-22T19:04:16.663+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '1HaMZ44BeGvon-anrSaa', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 114, '_primary_term': 1}
+[2024-03-22T19:04:16.772+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.108s]
+[2024-03-22T19:04:16.772+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '1naMZ44BeGvon-anriZG', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 116, '_primary_term': 1}
+[2024-03-22T19:04:16.833+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.061s]
+[2024-03-22T19:04:16.837+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '13aMZ44BeGvon-anriah', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 118, '_primary_term': 1}
+[2024-03-22T19:04:16.934+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.096s]
+[2024-03-22T19:04:16.935+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '2XaMZ44BeGvon-anribi', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 120, '_primary_term': 1}
+[2024-03-22T19:04:16.965+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.029s]
+[2024-03-22T19:04:16.965+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '23aMZ44BeGvon-anryYr', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 122, '_primary_term': 1}
+[2024-03-22T19:04:17.011+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.045s]
+[2024-03-22T19:04:17.012+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '3XaMZ44BeGvon-anryZK', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 124, '_primary_term': 1}
+[2024-03-22T19:04:17.028+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:04:17.029+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '33aMZ44BeGvon-anryZ6', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 126, '_primary_term': 1}
+[2024-03-22T19:04:17.056+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.025s]
+[2024-03-22T19:04:17.059+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '4naMZ44BeGvon-anryaO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 128, '_primary_term': 1}
+[2024-03-22T19:04:17.087+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-22T19:04:17.091+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '43aMZ44BeGvon-anryat', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 130, '_primary_term': 1}
+[2024-03-22T19:04:17.116+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-22T19:04:17.116+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '5naMZ44BeGvon-anrybU', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 133, '_primary_term': 1}
+[2024-03-22T19:04:17.135+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-22T19:04:17.135+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '6HaMZ44BeGvon-anrybe', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 134, '_primary_term': 1}
+[2024-03-22T19:04:17.153+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-22T19:04:17.155+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '6naMZ44BeGvon-anrybx', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 137, '_primary_term': 1}
+[2024-03-22T19:04:17.175+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-22T19:04:17.176+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '7HaMZ44BeGvon-ansCYG', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 138, '_primary_term': 1}
+[2024-03-22T19:04:17.194+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-22T19:04:17.195+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '7XaMZ44BeGvon-ansCYc', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 140, '_primary_term': 1}
+[2024-03-22T19:04:17.210+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:04:17.211+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '8HaMZ44BeGvon-ansCYw', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 142, '_primary_term': 1}
+[2024-03-22T19:04:17.221+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-22T19:04:17.221+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '8naMZ44BeGvon-ansCY-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 144, '_primary_term': 1}
+[2024-03-22T19:04:17.252+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.030s]
+[2024-03-22T19:04:17.253+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '83aMZ44BeGvon-ansCZJ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 146, '_primary_term': 1}
+[2024-03-22T19:04:17.270+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:17.276+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '9XaMZ44BeGvon-ansCZr', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 149, '_primary_term': 1}
+[2024-03-22T19:04:17.306+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.029s]
+[2024-03-22T19:04:17.307+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '93aMZ44BeGvon-ansCaP', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 150, '_primary_term': 1}
+[2024-03-22T19:04:17.314+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-22T19:04:17.315+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '-XaMZ44BeGvon-ansCae', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 153, '_primary_term': 1}
+[2024-03-22T19:04:17.326+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:04:17.327+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '_HaMZ44BeGvon-ansCal', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 154, '_primary_term': 1}
+[2024-03-22T19:04:17.341+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:04:17.342+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '_XaMZ44BeGvon-ansCaz', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 157, '_primary_term': 1}
+[2024-03-22T19:04:17.365+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-22T19:04:17.369+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': '_3aMZ44BeGvon-ansCbC', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 158, '_primary_term': 1}
+[2024-03-22T19:04:17.395+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.023s]
+[2024-03-22T19:04:17.396+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'AnaMZ44BeGvon-ansCfe', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 160, '_primary_term': 1}
+[2024-03-22T19:04:17.419+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.021s]
+[2024-03-22T19:04:17.421+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'BHaMZ44BeGvon-ansCf6', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 163, '_primary_term': 1}
+[2024-03-22T19:04:17.465+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-22T19:04:17.466+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'BXaMZ44BeGvon-ansScV', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 164, '_primary_term': 1}
+[2024-03-22T19:04:17.479+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-22T19:04:17.481+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'B3aMZ44BeGvon-ansSc-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 166, '_primary_term': 1}
+[2024-03-22T19:04:17.497+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:04:17.501+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'CXaMZ44BeGvon-ansSdM', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 169, '_primary_term': 1}
+[2024-03-22T19:04:17.545+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.040s]
+[2024-03-22T19:04:17.546+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'DHaMZ44BeGvon-ansSdx', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 170, '_primary_term': 1}
+[2024-03-22T19:04:17.880+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.328s]
+[2024-03-22T19:04:17.900+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'DXaMZ44BeGvon-ansSeO', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 172, '_primary_term': 1}
+[2024-03-22T19:04:18.182+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.249s]
+[2024-03-22T19:04:18.189+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'D3aMZ44BeGvon-ansydu', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 174, '_primary_term': 1}
+[2024-03-22T19:04:18.282+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.078s]
+[2024-03-22T19:04:18.306+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'EHaMZ44BeGvon-antCc3', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 175, '_primary_term': 1}
+[2024-03-22T19:04:18.370+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.036s]
+[2024-03-22T19:04:18.371+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'EXaMZ44BeGvon-antCel', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 176, '_primary_term': 1}
+[2024-03-22T19:04:18.431+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.057s]
+[2024-03-22T19:04:18.435+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'EnaMZ44BeGvon-antCfK', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 177, '_primary_term': 1}
+[2024-03-22T19:04:18.498+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.054s]
+[2024-03-22T19:04:18.501+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'FHaMZ44BeGvon-antScT', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 179, '_primary_term': 1}
+[2024-03-22T19:04:18.587+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.083s]
+[2024-03-22T19:04:18.602+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'FnaMZ44BeGvon-antSdJ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 180, '_primary_term': 1}
+[2024-03-22T19:04:18.659+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.047s]
+[2024-03-22T19:04:18.665+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'GHaMZ44BeGvon-antSe8', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 183, '_primary_term': 1}
+[2024-03-22T19:04:18.708+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.039s]
+[2024-03-22T19:04:18.709+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'GnaMZ44BeGvon-antSfx', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 185, '_primary_term': 1}
+[2024-03-22T19:04:18.780+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.070s]
+[2024-03-22T19:04:18.781+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'HHaMZ44BeGvon-anticX', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 187, '_primary_term': 1}
+[2024-03-22T19:04:18.808+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.026s]
+[2024-03-22T19:04:18.810+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'H3aMZ44BeGvon-antidg', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 190, '_primary_term': 1}
+[2024-03-22T19:04:18.862+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.051s]
+[2024-03-22T19:04:18.862+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'IXaMZ44BeGvon-antieA', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 192, '_primary_term': 1}
+[2024-03-22T19:04:18.891+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.028s]
+[2024-03-22T19:04:18.893+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'I3aMZ44BeGvon-antie2', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 194, '_primary_term': 1}
+[2024-03-22T19:04:18.926+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-22T19:04:18.927+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'JXaMZ44BeGvon-antifb', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 196, '_primary_term': 1}
+[2024-03-22T19:04:19.012+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.084s]
+[2024-03-22T19:04:19.013+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'J3aMZ44BeGvon-antycS', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 198, '_primary_term': 1}
+[2024-03-22T19:04:19.036+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-22T19:04:19.037+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'KHaMZ44BeGvon-antydK', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 199, '_primary_term': 1}
+[2024-03-22T19:04:19.054+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:19.056+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'KnaMZ44BeGvon-antydh', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 201, '_primary_term': 1}
+[2024-03-22T19:04:19.077+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:19.078+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'LHaMZ44BeGvon-antyd7', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 203, '_primary_term': 1}
+[2024-03-22T19:04:19.094+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:19.096+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'LnaMZ44BeGvon-antyeI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 205, '_primary_term': 1}
+[2024-03-22T19:04:19.114+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:04:19.116+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'MHaMZ44BeGvon-antyef', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 207, '_primary_term': 1}
+[2024-03-22T19:04:19.131+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-22T19:04:19.132+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'MXaMZ44BeGvon-antyev', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 209, '_primary_term': 1}
+[2024-03-22T19:04:19.144+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-22T19:04:19.145+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'M3aMZ44BeGvon-antye-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 210, '_primary_term': 1}
+[2024-03-22T19:04:19.162+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-22T19:04:19.166+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'NnaMZ44BeGvon-antyfL', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 212, '_primary_term': 1}
+[2024-03-22T19:04:19.345+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.177s]
+[2024-03-22T19:04:19.355+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'OHaMZ44BeGvon-antyfm', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 215, '_primary_term': 1}
+[2024-03-22T19:04:21.292+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:1.838s]
+[2024-03-22T19:04:21.314+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'OXaMZ44BeGvon-anuCf-', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 216, '_primary_term': 1}
+[2024-03-22T19:04:21.411+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.076s]
+[2024-03-22T19:04:21.412+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'PXaMZ44BeGvon-anwCdo', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 220, '_primary_term': 1}
+[2024-03-22T19:04:21.459+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.046s]
+[2024-03-22T19:04:21.460+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'P3aMZ44BeGvon-anwCep', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 222, '_primary_term': 1}
+[2024-03-22T19:04:21.492+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.030s]
+[2024-03-22T19:04:21.493+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'QXaMZ44BeGvon-anwCfk', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 224, '_primary_term': 1}
+[2024-03-22T19:04:21.509+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-22T19:04:21.510+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'Q3aMZ44BeGvon-anwCf4', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 226, '_primary_term': 1}
+[2024-03-22T19:04:21.524+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-22T19:04:21.527+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'RnaMZ44BeGvon-anwScI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 229, '_primary_term': 1}
+[2024-03-22T19:04:21.591+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-22T19:04:21.592+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'SHaMZ44BeGvon-anwSdC', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 231, '_primary_term': 1}
+[2024-03-22T19:04:21.657+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.060s]
+[2024-03-22T19:04:21.659+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'SXaMZ44BeGvon-anwSdm', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 232, '_primary_term': 1}
+[2024-03-22T19:04:21.729+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.043s]
+[2024-03-22T19:04:21.734+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'S3aMZ44BeGvon-anwSfJ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 234, '_primary_term': 1}
+[2024-03-22T19:04:21.781+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.039s]
+[2024-03-22T19:04:21.787+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'TnaMZ44BeGvon-anwSf3', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 237, '_primary_term': 1}
+[2024-03-22T19:04:21.852+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.057s]
+[2024-03-22T19:04:21.854+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'T3aMZ44BeGvon-anwicv', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 239, '_primary_term': 1}
+[2024-03-22T19:04:21.947+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.069s]
+[2024-03-22T19:04:21.949+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'UXaMZ44BeGvon-anwieZ', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 240, '_primary_term': 1}
+[2024-03-22T19:04:22.103+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.140s]
+[2024-03-22T19:04:22.114+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'VHaMZ44BeGvon-anwycI', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 242, '_primary_term': 1}
+[2024-03-22T19:04:22.451+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.264s]
+[2024-03-22T19:04:22.458+0000] {logging_mixin.py:115} INFO - {'_index': 'milestone', '_type': 'doc', '_id': 'VXaMZ44BeGvon-anwyf0', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 245, '_primary_term': 1}
+[2024-03-22T19:04:23.094+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.612s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2024-03-22T19:04:23.221+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.051s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff62164950>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-22T19:04:23.251+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.006s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff620cce10>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-22T19:04:23.263+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.007s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff620f00d0>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-22T19:04:23.288+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff620f00d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_elia_DAG.py", line 66, in transfer_data
+    res=es.index(index="milestone", doc_type = "doc", body=doc)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 168, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 411, in index
+    body=body,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 413, in perform_request
+    raise e
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 388, in perform_request
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 266, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0xffff620f00d0>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff620f00d0>: Failed to establish a new connection: [Errno 111] Connection refused)
+[2024-03-22T19:04:23.485+0000] {taskinstance.py:1412} INFO - Marking task as UP_FOR_RETRY. dag_id=milestone3, task_id=transfer_data_to_kibana, execution_date=20240322T190300, start_date=20240322T190407, end_date=20240322T190423
+[2024-03-22T19:04:23.556+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 266 for task transfer_data_to_kibana (ConnectionError(<urllib3.connection.HTTPConnection object at 0xffff620f00d0>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff620f00d0>: Failed to establish a new connection: [Errno 111] Connection refused); 2239)
+[2024-03-22T19:04:23.749+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-22T19:04:24.009+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-22T19:05:19.575+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:03:00+00:00 [queued]>
+[2024-03-22T19:05:19.598+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:03:00+00:00 [queued]>
+[2024-03-22T19:05:19.599+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T19:05:19.599+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2024-03-22T19:05:19.600+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T19:05:19.622+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): transfer_data_to_kibana> on 2024-03-22 19:03:00+00:00
+[2024-03-22T19:05:19.652+0000] {standard_task_runner.py:52} INFO - Started process 2280 to run task
+[2024-03-22T19:05:19.686+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'transfer_data_to_kibana', 'scheduled__2024-03-22T19:03:00+00:00', '--job-id', '274', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmprbhex2lz', '--error-file', '/tmp/tmps7fqos0p']
+[2024-03-22T19:05:19.704+0000] {standard_task_runner.py:80} INFO - Job 274: Subtask transfer_data_to_kibana
+[2024-03-22T19:05:19.919+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-22T19:03:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T19:05:20.225+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=transfer_data_to_kibana
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T19:03:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T19:03:00+00:00
+[2024-03-22T19:05:20.597+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.007s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff62a75390>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-22T19:05:20.632+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.003s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff62bd43d0>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-22T19:05:20.635+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff620c3e50>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-22T19:05:20.638+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff620d9110>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-22T19:05:20.640+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff620d9110>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_elia_DAG.py", line 66, in transfer_data
+    res=es.index(index="milestone", doc_type = "doc", body=doc)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 168, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 411, in index
+    body=body,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 413, in perform_request
+    raise e
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 388, in perform_request
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 266, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0xffff620d9110>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff620d9110>: Failed to establish a new connection: [Errno 111] Connection refused)
+[2024-03-22T19:05:20.743+0000] {taskinstance.py:1412} INFO - Marking task as UP_FOR_RETRY. dag_id=milestone3, task_id=transfer_data_to_kibana, execution_date=20240322T190300, start_date=20240322T190519, end_date=20240322T190520
+[2024-03-22T19:05:20.769+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 274 for task transfer_data_to_kibana (ConnectionError(<urllib3.connection.HTTPConnection object at 0xffff620d9110>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff620d9110>: Failed to establish a new connection: [Errno 111] Connection refused); 2280)
+[2024-03-22T19:05:20.919+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-22T19:05:21.061+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

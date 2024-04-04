@@ -1,0 +1,558 @@
+[2024-03-23T07:44:43.050+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-23T06:30:00+00:00 [queued]>
+[2024-03-23T07:44:43.082+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-23T06:30:00+00:00 [queued]>
+[2024-03-23T07:44:43.085+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-23T07:44:43.088+0000] {taskinstance.py:1369} INFO - Starting attempt 2 of 2
+[2024-03-23T07:44:43.091+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-23T07:44:43.127+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): transfer_data_to_kibana> on 2024-03-23 06:30:00+00:00
+[2024-03-23T07:44:43.145+0000] {standard_task_runner.py:52} INFO - Started process 206 to run task
+[2024-03-23T07:44:43.157+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'transfer_data_to_kibana', 'scheduled__2024-03-23T06:30:00+00:00', '--job-id', '359', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmpy5_eo5gi', '--error-file', '/tmp/tmpv6ackcrb']
+[2024-03-23T07:44:43.161+0000] {standard_task_runner.py:80} INFO - Job 359: Subtask transfer_data_to_kibana
+[2024-03-23T07:44:43.612+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.transfer_data_to_kibana scheduled__2024-03-23T06:30:00+00:00 [running]> on host 80b200fb75a8
+[2024-03-23T07:44:44.072+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=transfer_data_to_kibana
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-23T06:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-23T06:30:00+00:00
+[2024-03-23T07:44:49.901+0000] {logging_mixin.py:115} WARNING - /home/***/.local/lib/python3.7/site-packages/elasticsearch/connection/base.py:208 ElasticsearchWarning: [types removal] Specifying types in document index requests is deprecated, use the typeless endpoints instead (/{index}/_doc/{id}, /{index}/_doc, or /{index}/_create/{id}).
+[2024-03-23T07:44:49.941+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:5.018s]
+[2024-03-23T07:44:50.420+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.433s]
+[2024-03-23T07:44:50.807+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.385s]
+[2024-03-23T07:44:50.854+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-23T07:44:50.912+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.057s]
+[2024-03-23T07:44:50.966+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.049s]
+[2024-03-23T07:44:51.019+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.052s]
+[2024-03-23T07:44:51.050+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-23T07:44:51.154+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.103s]
+[2024-03-23T07:44:51.220+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.065s]
+[2024-03-23T07:44:51.264+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.043s]
+[2024-03-23T07:44:51.306+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-23T07:44:51.350+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.043s]
+[2024-03-23T07:44:51.386+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.036s]
+[2024-03-23T07:44:51.490+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.103s]
+[2024-03-23T07:44:51.539+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.047s]
+[2024-03-23T07:44:51.582+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-23T07:44:51.625+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.042s]
+[2024-03-23T07:44:51.661+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.033s]
+[2024-03-23T07:44:51.697+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-23T07:44:51.730+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-23T07:44:51.749+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-23T07:44:51.793+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.043s]
+[2024-03-23T07:44:51.817+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-23T07:44:51.836+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:44:51.867+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.030s]
+[2024-03-23T07:44:51.892+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.024s]
+[2024-03-23T07:44:51.910+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-23T07:44:51.927+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-23T07:44:51.943+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-23T07:44:51.965+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-23T07:44:51.999+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-23T07:44:52.080+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.079s]
+[2024-03-23T07:44:52.246+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.161s]
+[2024-03-23T07:44:53.201+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.949s]
+[2024-03-23T07:44:53.991+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.767s]
+[2024-03-23T07:44:54.109+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.100s]
+[2024-03-23T07:44:54.203+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.090s]
+[2024-03-23T07:44:54.265+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.061s]
+[2024-03-23T07:44:54.377+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.111s]
+[2024-03-23T07:44:54.590+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.209s]
+[2024-03-23T07:44:54.721+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.124s]
+[2024-03-23T07:44:54.767+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.045s]
+[2024-03-23T07:44:54.920+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.151s]
+[2024-03-23T07:44:55.000+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.079s]
+[2024-03-23T07:44:55.024+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-23T07:44:55.049+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.024s]
+[2024-03-23T07:44:55.081+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-23T07:44:55.103+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.021s]
+[2024-03-23T07:44:55.133+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.029s]
+[2024-03-23T07:44:55.162+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.028s]
+[2024-03-23T07:44:55.228+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.063s]
+[2024-03-23T07:44:55.251+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.021s]
+[2024-03-23T07:44:55.270+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:44:55.332+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.060s]
+[2024-03-23T07:44:55.395+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.060s]
+[2024-03-23T07:44:55.418+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.021s]
+[2024-03-23T07:44:55.463+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-23T07:44:55.544+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.080s]
+[2024-03-23T07:44:55.611+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.058s]
+[2024-03-23T07:44:55.704+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.092s]
+[2024-03-23T07:44:55.758+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.052s]
+[2024-03-23T07:44:55.855+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.096s]
+[2024-03-23T07:44:55.907+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.050s]
+[2024-03-23T07:44:56.006+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.099s]
+[2024-03-23T07:44:56.079+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.071s]
+[2024-03-23T07:44:56.138+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.058s]
+[2024-03-23T07:44:56.186+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.047s]
+[2024-03-23T07:44:56.504+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.317s]
+[2024-03-23T07:44:56.780+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.274s]
+[2024-03-23T07:44:59.718+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:2.934s]
+[2024-03-23T07:44:59.744+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-23T07:44:59.779+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-23T07:44:59.797+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-23T07:44:59.836+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.038s]
+[2024-03-23T07:44:59.868+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-23T07:44:59.903+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.035s]
+[2024-03-23T07:44:59.923+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-23T07:44:59.958+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.034s]
+[2024-03-23T07:44:59.975+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-23T07:45:00.092+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.116s]
+[2024-03-23T07:45:00.141+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.047s]
+[2024-03-23T07:45:00.165+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.023s]
+[2024-03-23T07:45:00.213+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.047s]
+[2024-03-23T07:45:00.238+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.024s]
+[2024-03-23T07:45:00.318+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.079s]
+[2024-03-23T07:45:00.685+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.366s]
+[2024-03-23T07:45:00.794+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.108s]
+[2024-03-23T07:45:00.854+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.056s]
+[2024-03-23T07:45:00.888+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-23T07:45:00.940+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.051s]
+[2024-03-23T07:45:00.955+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-23T07:45:00.986+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.030s]
+[2024-03-23T07:45:01.005+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:01.038+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-23T07:45:01.059+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-23T07:45:01.230+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.169s]
+[2024-03-23T07:45:01.603+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.370s]
+[2024-03-23T07:45:01.743+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.134s]
+[2024-03-23T07:45:01.819+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.072s]
+[2024-03-23T07:45:01.874+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-23T07:45:01.913+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.030s]
+[2024-03-23T07:45:01.949+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-23T07:45:02.001+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.040s]
+[2024-03-23T07:45:02.029+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:02.045+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-23T07:45:02.086+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-23T07:45:02.144+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.037s]
+[2024-03-23T07:45:02.202+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.056s]
+[2024-03-23T07:45:02.219+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-23T07:45:02.247+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.026s]
+[2024-03-23T07:45:02.305+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.054s]
+[2024-03-23T07:45:02.343+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.036s]
+[2024-03-23T07:45:02.365+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-23T07:45:02.376+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-23T07:45:02.395+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:02.439+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.041s]
+[2024-03-23T07:45:02.507+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.066s]
+[2024-03-23T07:45:02.535+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.023s]
+[2024-03-23T07:45:02.568+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-23T07:45:02.699+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.129s]
+[2024-03-23T07:45:02.773+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.061s]
+[2024-03-23T07:45:02.851+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.058s]
+[2024-03-23T07:45:02.918+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.053s]
+[2024-03-23T07:45:02.966+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.034s]
+[2024-03-23T07:45:02.986+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:02.999+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-23T07:45:03.020+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-23T07:45:03.035+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-23T07:45:03.102+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.051s]
+[2024-03-23T07:45:03.206+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.102s]
+[2024-03-23T07:45:03.343+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.135s]
+[2024-03-23T07:45:03.525+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.167s]
+[2024-03-23T07:45:03.597+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.058s]
+[2024-03-23T07:45:03.732+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.085s]
+[2024-03-23T07:45:03.819+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.061s]
+[2024-03-23T07:45:03.864+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.026s]
+[2024-03-23T07:45:03.881+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-23T07:45:03.950+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.068s]
+[2024-03-23T07:45:03.986+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.033s]
+[2024-03-23T07:45:04.048+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.056s]
+[2024-03-23T07:45:04.079+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-23T07:45:04.173+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.076s]
+[2024-03-23T07:45:04.231+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.046s]
+[2024-03-23T07:45:04.263+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-23T07:45:04.274+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-23T07:45:04.317+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.042s]
+[2024-03-23T07:45:04.489+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.167s]
+[2024-03-23T07:45:04.621+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.116s]
+[2024-03-23T07:45:04.726+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.101s]
+[2024-03-23T07:45:04.819+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.075s]
+[2024-03-23T07:45:05.122+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.270s]
+[2024-03-23T07:45:05.209+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.060s]
+[2024-03-23T07:45:05.231+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.020s]
+[2024-03-23T07:45:05.247+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-23T07:45:05.361+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.113s]
+[2024-03-23T07:45:05.445+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.077s]
+[2024-03-23T07:45:05.513+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.057s]
+[2024-03-23T07:45:05.576+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.062s]
+[2024-03-23T07:45:05.594+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-23T07:45:05.616+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.021s]
+[2024-03-23T07:45:05.685+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.068s]
+[2024-03-23T07:45:05.702+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-23T07:45:05.718+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-23T07:45:05.751+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.033s]
+[2024-03-23T07:45:05.762+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-23T07:45:05.771+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-23T07:45:05.780+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-23T07:45:05.791+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-23T07:45:05.800+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-23T07:45:05.811+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-23T07:45:05.818+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-23T07:45:05.823+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-23T07:45:05.837+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-23T07:45:05.849+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-23T07:45:05.859+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-23T07:45:05.877+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.016s]
+[2024-03-23T07:45:05.893+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-23T07:45:05.910+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-23T07:45:05.920+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-23T07:45:05.927+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-23T07:45:05.933+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-23T07:45:05.939+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-23T07:45:05.946+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-23T07:45:05.955+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-23T07:45:05.965+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-23T07:45:05.977+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-23T07:45:06.000+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-23T07:45:06.090+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.090s]
+[2024-03-23T07:45:06.221+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.128s]
+[2024-03-23T07:45:06.313+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.091s]
+[2024-03-23T07:45:06.375+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.058s]
+[2024-03-23T07:45:06.411+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.034s]
+[2024-03-23T07:45:06.439+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-23T07:45:06.458+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:06.582+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.123s]
+[2024-03-23T07:45:06.611+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-23T07:45:06.707+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.095s]
+[2024-03-23T07:45:06.771+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.062s]
+[2024-03-23T07:45:06.790+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:06.815+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.023s]
+[2024-03-23T07:45:06.833+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-23T07:45:06.864+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-23T07:45:06.900+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.034s]
+[2024-03-23T07:45:06.943+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.042s]
+[2024-03-23T07:45:06.970+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.025s]
+[2024-03-23T07:45:06.991+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.021s]
+[2024-03-23T07:45:06.999+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-23T07:45:07.026+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.026s]
+[2024-03-23T07:45:07.066+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.040s]
+[2024-03-23T07:45:07.081+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-23T07:45:07.089+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-23T07:45:07.099+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-23T07:45:07.171+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.071s]
+[2024-03-23T07:45:07.353+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.180s]
+[2024-03-23T07:45:07.370+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.017s]
+[2024-03-23T07:45:07.392+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:07.428+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.031s]
+[2024-03-23T07:45:07.451+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:07.471+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-23T07:45:07.485+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-23T07:45:07.554+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.068s]
+[2024-03-23T07:45:07.581+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.026s]
+[2024-03-23T07:45:07.592+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-23T07:45:07.601+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-23T07:45:07.634+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.032s]
+[2024-03-23T07:45:07.646+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-23T07:45:07.660+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-23T07:45:07.671+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-23T07:45:07.684+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-23T07:45:07.695+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-23T07:45:07.717+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-23T07:45:07.735+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.014s]
+[2024-03-23T07:45:07.748+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-23T07:45:07.798+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.048s]
+[2024-03-23T07:45:07.822+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.023s]
+[2024-03-23T07:45:07.831+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-23T07:45:07.841+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-23T07:45:07.929+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.087s]
+[2024-03-23T07:45:07.951+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.018s]
+[2024-03-23T07:45:07.964+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-23T07:45:08.009+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-23T07:45:08.037+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-23T07:45:08.049+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-23T07:45:08.062+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.012s]
+[2024-03-23T07:45:08.069+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-23T07:45:08.074+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-23T07:45:08.084+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.009s]
+[2024-03-23T07:45:08.090+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-23T07:45:08.098+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-23T07:45:08.102+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-23T07:45:08.108+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-23T07:45:08.118+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-23T07:45:08.139+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-23T07:45:08.184+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.040s]
+[2024-03-23T07:45:08.208+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.020s]
+[2024-03-23T07:45:08.225+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-23T07:45:08.255+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.022s]
+[2024-03-23T07:45:08.282+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.019s]
+[2024-03-23T07:45:08.482+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.179s]
+[2024-03-23T07:45:08.551+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-23T07:45:08.618+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.062s]
+[2024-03-23T07:45:08.678+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.043s]
+[2024-03-23T07:45:08.729+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.038s]
+[2024-03-23T07:45:09.047+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.291s]
+[2024-03-23T07:45:09.508+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.419s]
+[2024-03-23T07:45:09.658+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.133s]
+[2024-03-23T07:45:09.743+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-23T07:45:09.773+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.027s]
+[2024-03-23T07:45:09.786+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.011s]
+[2024-03-23T07:45:09.801+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-23T07:45:11.160+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:1.358s]
+[2024-03-23T07:45:11.205+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.033s]
+[2024-03-23T07:45:11.244+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.037s]
+[2024-03-23T07:45:11.286+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.042s]
+[2024-03-23T07:45:11.314+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.026s]
+[2024-03-23T07:45:11.373+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.044s]
+[2024-03-23T07:45:11.431+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.045s]
+[2024-03-23T07:45:11.527+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.085s]
+[2024-03-23T07:45:11.580+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.048s]
+[2024-03-23T07:45:11.591+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.010s]
+[2024-03-23T07:45:11.599+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.007s]
+[2024-03-23T07:45:11.604+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.004s]
+[2024-03-23T07:45:11.608+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.003s]
+[2024-03-23T07:45:11.614+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-23T07:45:11.624+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.008s]
+[2024-03-23T07:45:11.629+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.005s]
+[2024-03-23T07:45:11.635+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.006s]
+[2024-03-23T07:45:11.660+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.024s]
+[2024-03-23T07:45:11.675+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.013s]
+[2024-03-23T07:45:11.691+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.015s]
+[2024-03-23T07:45:11.759+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.066s]
+[2024-03-23T07:45:11.796+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.036s]
+[2024-03-23T07:45:11.825+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.028s]
+[2024-03-23T07:45:11.882+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.054s]
+[2024-03-23T07:45:11.960+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.077s]
+[2024-03-23T07:45:12.048+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.076s]
+[2024-03-23T07:45:12.108+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.051s]
+[2024-03-23T07:45:12.185+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.070s]
+[2024-03-23T07:45:12.234+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.043s]
+[2024-03-23T07:45:12.455+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.207s]
+[2024-03-23T07:45:13.243+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.770s]
+[2024-03-23T07:45:13.899+0000] {base.py:271} INFO - POST http://elasticsearch:9200/milestone/doc [status:201 request:0.634s]
+[2024-03-23T07:45:14.937+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.470s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2024-03-23T07:45:15.018+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.033s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff7aa67dd0>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-23T07:45:15.026+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff7a9db350>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-23T07:45:15.042+0000] {base.py:299} WARNING - POST http://elasticsearch:9200/milestone/doc [status:N/A request:0.003s]
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff7a9e6650>: Failed to establish a new connection: [Errno 111] Connection refused
+[2024-03-23T07:45:15.072+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 252, in perform_request
+    method, url, body, retries=Retry(False), headers=request_headers, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.7/http/client.py", line 1281, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1327, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1276, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.7/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.7/http/client.py", line 976, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff7a9e6650>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_elia_DAG.py", line 77, in post_to_elasticsearch_process
+    res=es.index(index="milestone", doc_type = "doc", body=doc)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/utils.py", line 168, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 411, in index
+    body=body,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 413, in perform_request
+    raise e
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 388, in perform_request
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 266, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0xffff7a9e6650>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff7a9e6650>: Failed to establish a new connection: [Errno 111] Connection refused)
+[2024-03-23T07:45:15.360+0000] {taskinstance.py:1412} INFO - Marking task as FAILED. dag_id=milestone3, task_id=transfer_data_to_kibana, execution_date=20240323T063000, start_date=20240323T074443, end_date=20240323T074515
+[2024-03-23T07:45:15.486+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 359 for task transfer_data_to_kibana (ConnectionError(<urllib3.connection.HTTPConnection object at 0xffff7a9e6650>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0xffff7a9e6650>: Failed to establish a new connection: [Errno 111] Connection refused); 206)
+[2024-03-23T07:45:15.535+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-23T07:45:15.824+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

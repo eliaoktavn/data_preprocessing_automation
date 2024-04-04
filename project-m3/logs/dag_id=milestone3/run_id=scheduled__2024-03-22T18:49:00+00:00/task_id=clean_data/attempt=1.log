@@ -1,0 +1,86 @@
+[2024-03-22T18:50:05.090+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.clean_data scheduled__2024-03-22T18:49:00+00:00 [queued]>
+[2024-03-22T18:50:05.105+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.clean_data scheduled__2024-03-22T18:49:00+00:00 [queued]>
+[2024-03-22T18:50:05.106+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:50:05.107+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2024-03-22T18:50:05.108+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:50:05.140+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): clean_data> on 2024-03-22 18:49:00+00:00
+[2024-03-22T18:50:05.165+0000] {standard_task_runner.py:52} INFO - Started process 1847 to run task
+[2024-03-22T18:50:05.178+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'clean_data', 'scheduled__2024-03-22T18:49:00+00:00', '--job-id', '199', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmph6c9ubxo', '--error-file', '/tmp/tmp10vojjpt']
+[2024-03-22T18:50:05.206+0000] {standard_task_runner.py:80} INFO - Job 199: Subtask clean_data
+[2024-03-22T18:50:05.392+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.clean_data scheduled__2024-03-22T18:49:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T18:50:05.652+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=clean_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T18:49:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T18:49:00+00:00
+[2024-03-22T18:50:05.867+0000] {logging_mixin.py:115} INFO -        index      Date    Year  ...    Cost      Revenue Column1
+0          0  02/19/16  2016.0  ...    80.0   109.000000     NaN
+1          1  02/20/16  2016.0  ...    49.0    57.000000     NaN
+2          2  02/27/16  2016.0  ...    11.0    15.000000     NaN
+3          3  03/12/16  2016.0  ...   175.0   233.000000     NaN
+4          4  03/12/16  2016.0  ...   105.0   125.000000     NaN
+...      ...       ...     ...  ...     ...          ...     ...
+34862  34862  02/07/16  2016.0  ...  2320.0  1971.000000     NaN
+34863  34863  03/13/15  2015.0  ...  2049.0  1583.000000     NaN
+34864  34864  04/05/15  2015.0  ...  2049.0  1682.000000     NaN
+34865  34865  08/30/15  2015.0  ...  2320.0  1568.000000     NaN
+34866  34866       NaN     NaN  ...     NaN   641.532095     NaN
+
+[34867 rows x 16 columns]
+[2024-03-22T18:50:05.912+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_elia_DAG.py", line 46, in clean
+    df=df.dropna(subset=['Date']) #drop null data row (no information)
+AttributeError: 'NoneType' object has no attribute 'dropna'
+[2024-03-22T18:50:05.958+0000] {taskinstance.py:1412} INFO - Marking task as UP_FOR_RETRY. dag_id=milestone3, task_id=clean_data, execution_date=20240322T184900, start_date=20240322T185005, end_date=20240322T185005
+[2024-03-22T18:50:06.004+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 199 for task clean_data ('NoneType' object has no attribute 'dropna'; 1847)
+[2024-03-22T18:50:06.090+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-22T18:50:06.312+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-22T18:50:59.613+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.clean_data scheduled__2024-03-22T18:49:00+00:00 [queued]>
+[2024-03-22T18:50:59.628+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.clean_data scheduled__2024-03-22T18:49:00+00:00 [queued]>
+[2024-03-22T18:50:59.629+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:50:59.629+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2024-03-22T18:50:59.629+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:50:59.645+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): clean_data> on 2024-03-22 18:49:00+00:00
+[2024-03-22T18:50:59.658+0000] {standard_task_runner.py:52} INFO - Started process 1879 to run task
+[2024-03-22T18:50:59.662+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'clean_data', 'scheduled__2024-03-22T18:49:00+00:00', '--job-id', '203', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmpyk3a777v', '--error-file', '/tmp/tmpm4p9cx00']
+[2024-03-22T18:50:59.665+0000] {standard_task_runner.py:80} INFO - Job 203: Subtask clean_data
+[2024-03-22T18:50:59.797+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.clean_data scheduled__2024-03-22T18:49:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T18:50:59.926+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=clean_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T18:49:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T18:49:00+00:00
+[2024-03-22T18:51:00.119+0000] {logging_mixin.py:115} INFO -    index      Date    Year     Month  ...  Unit Price   Cost Revenue Column1
+0      0  02/19/16  2016.0  February  ...  109.000000   80.0   109.0     NaN
+1      1  02/20/16  2016.0  February  ...   28.500000   49.0    57.0     NaN
+2      2  02/27/16  2016.0  February  ...    5.000000   11.0    15.0     NaN
+3      3  03/12/16  2016.0     March  ...  116.500000  175.0   233.0     NaN
+4      4  03/12/16  2016.0     March  ...   41.666667  105.0   125.0     NaN
+
+[5 rows x 16 columns]
+[2024-03-22T18:51:00.159+0000] {taskinstance.py:1902} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/P2M3_elia_DAG.py", line 45, in clean
+    print(df.head())
+AttributeError: 'NoneType' object has no attribute 'head'
+[2024-03-22T18:51:00.209+0000] {taskinstance.py:1412} INFO - Marking task as UP_FOR_RETRY. dag_id=milestone3, task_id=clean_data, execution_date=20240322T184900, start_date=20240322T185059, end_date=20240322T185100
+[2024-03-22T18:51:00.221+0000] {standard_task_runner.py:97} ERROR - Failed to execute job 203 for task clean_data ('NoneType' object has no attribute 'head'; 1879)
+[2024-03-22T18:51:00.256+0000] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-22T18:51:00.312+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,46 @@
+[2024-03-22T18:50:01.787+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:49:00+00:00 [queued]>
+[2024-03-22T18:50:01.795+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:49:00+00:00 [queued]>
+[2024-03-22T18:50:01.795+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:50:01.795+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2024-03-22T18:50:01.796+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:50:01.809+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): fetch_data_from_progresql> on 2024-03-22 18:49:00+00:00
+[2024-03-22T18:50:01.846+0000] {standard_task_runner.py:52} INFO - Started process 1843 to run task
+[2024-03-22T18:50:01.854+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'fetch_data_from_progresql', 'scheduled__2024-03-22T18:49:00+00:00', '--job-id', '198', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmpz4wlvhrk', '--error-file', '/tmp/tmpvzcu2hy4']
+[2024-03-22T18:50:01.858+0000] {standard_task_runner.py:80} INFO - Job 198: Subtask fetch_data_from_progresql
+[2024-03-22T18:50:02.100+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:49:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T18:50:02.193+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=fetch_data_from_progresql
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T18:49:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T18:49:00+00:00
+[2024-03-22T18:50:02.735+0000] {python.py:173} INFO - Done. Returned value was: None
+[2024-03-22T18:50:02.814+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=milestone3, task_id=fetch_data_from_progresql, execution_date=20240322T184900, start_date=20240322T185001, end_date=20240322T185002
+[2024-03-22T18:50:02.880+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-22T18:50:03.019+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-22T18:50:54.657+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:49:00+00:00 [queued]>
+[2024-03-22T18:50:54.669+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:49:00+00:00 [queued]>
+[2024-03-22T18:50:54.669+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:50:54.669+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2024-03-22T18:50:54.670+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-22T18:50:54.720+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): fetch_data_from_progresql> on 2024-03-22 18:49:00+00:00
+[2024-03-22T18:50:54.769+0000] {standard_task_runner.py:52} INFO - Started process 1872 to run task
+[2024-03-22T18:50:54.785+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'milestone3', 'fetch_data_from_progresql', 'scheduled__2024-03-22T18:49:00+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/P2M3_elia_DAG.py', '--cfg-path', '/tmp/tmpdm4tl_8t', '--error-file', '/tmp/tmphombngsy']
+[2024-03-22T18:50:54.803+0000] {standard_task_runner.py:80} INFO - Job 201: Subtask fetch_data_from_progresql
+[2024-03-22T18:50:55.135+0000] {task_command.py:371} INFO - Running <TaskInstance: milestone3.fetch_data_from_progresql scheduled__2024-03-22T18:49:00+00:00 [running]> on host b79cb602ca97
+[2024-03-22T18:50:55.299+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=elia
+AIRFLOW_CTX_DAG_ID=milestone3
+AIRFLOW_CTX_TASK_ID=fetch_data_from_progresql
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-22T18:49:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-22T18:49:00+00:00
+[2024-03-22T18:50:56.458+0000] {python.py:173} INFO - Done. Returned value was: None
+[2024-03-22T18:50:56.527+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=milestone3, task_id=fetch_data_from_progresql, execution_date=20240322T184900, start_date=20240322T185054, end_date=20240322T185056
+[2024-03-22T18:50:56.566+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-22T18:50:56.678+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
